@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0539411D9AF8B200D7A958 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0539401D9AF8B200D7A958 /* main.m */; };
-		2B0539441D9AF8B200D7A958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0539431D9AF8B200D7A958 /* AppDelegate.m */; };
-		2B0539471D9AF8B200D7A958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0539461D9AF8B200D7A958 /* ViewController.m */; };
-		2B05394A1D9AF8B200D7A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0539481D9AF8B200D7A958 /* Main.storyboard */; };
-		2B05394C1D9AF8B200D7A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B05394B1D9AF8B200D7A958 /* Assets.xcassets */; };
-		2B05394F1D9AF8B200D7A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05394D1D9AF8B200D7A958 /* LaunchScreen.storyboard */; };
+		712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B381D9AFCCF004468B2 /* AppDelegate.swift */; };
+		712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3A1D9AFCCF004468B2 /* ViewController.swift */; };
+		712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B3C1D9AFCCF004468B2 /* Main.storyboard */; };
+		712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */; };
+		712C9B431D9AFCCF004468B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B421D9AFCCF004468B2 /* Assets.xcassets */; };
+		712C9B461D9AFCCF004468B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B05393C1D9AF8B200D7A958 /* Hub-APS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hub-APS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B0539401D9AF8B200D7A958 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B0539421D9AF8B200D7A958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2B0539431D9AF8B200D7A958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B0539451D9AF8B200D7A958 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B0539461D9AF8B200D7A958 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B0539491D9AF8B200D7A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B05394B1D9AF8B200D7A958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B05394E1D9AF8B200D7A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2B0539501D9AF8B200D7A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712C9B351D9AFCCF004468B2 /* hubAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hubAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		712C9B381D9AFCCF004468B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		712C9B3A1D9AFCCF004468B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		712C9B3D1D9AFCCF004468B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		712C9B401D9AFCCF004468B2 /* hubAPS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hubAPS.xcdatamodel; sourceTree = "<group>"; };
+		712C9B421D9AFCCF004468B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		712C9B451D9AFCCF004468B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		712C9B471D9AFCCF004468B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B0539391D9AF8B200D7A958 /* Frameworks */ = {
+		712C9B321D9AFCCF004468B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,83 +37,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B0539331D9AF8B200D7A958 = {
+		712C9B2C1D9AFCCF004468B2 = {
 			isa = PBXGroup;
 			children = (
-				2B05393E1D9AF8B200D7A958 /* Hub-APS */,
-				2B05393D1D9AF8B200D7A958 /* Products */,
+				712C9B371D9AFCCF004468B2 /* hubAPS */,
+				712C9B361D9AFCCF004468B2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2B05393D1D9AF8B200D7A958 /* Products */ = {
+		712C9B361D9AFCCF004468B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B05393C1D9AF8B200D7A958 /* Hub-APS.app */,
+				712C9B351D9AFCCF004468B2 /* hubAPS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B05393E1D9AF8B200D7A958 /* Hub-APS */ = {
+		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
-				2B0539421D9AF8B200D7A958 /* AppDelegate.h */,
-				2B0539431D9AF8B200D7A958 /* AppDelegate.m */,
-				2B0539451D9AF8B200D7A958 /* ViewController.h */,
-				2B0539461D9AF8B200D7A958 /* ViewController.m */,
-				2B0539481D9AF8B200D7A958 /* Main.storyboard */,
-				2B05394B1D9AF8B200D7A958 /* Assets.xcassets */,
-				2B05394D1D9AF8B200D7A958 /* LaunchScreen.storyboard */,
-				2B0539501D9AF8B200D7A958 /* Info.plist */,
-				2B05393F1D9AF8B200D7A958 /* Supporting Files */,
+				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
+				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
+				712C9B3C1D9AFCCF004468B2 /* Main.storyboard */,
+				712C9B421D9AFCCF004468B2 /* Assets.xcassets */,
+				712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */,
+				712C9B471D9AFCCF004468B2 /* Info.plist */,
+				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
 			);
-			path = "Hub-APS";
-			sourceTree = "<group>";
-		};
-		2B05393F1D9AF8B200D7A958 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2B0539401D9AF8B200D7A958 /* main.m */,
-			);
-			name = "Supporting Files";
+			path = hubAPS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B05393B1D9AF8B200D7A958 /* Hub-APS */ = {
+		712C9B341D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B0539531D9AF8B200D7A958 /* Build configuration list for PBXNativeTarget "Hub-APS" */;
+			buildConfigurationList = 712C9B4A1D9AFCCF004468B2 /* Build configuration list for PBXNativeTarget "hubAPS" */;
 			buildPhases = (
-				2B0539381D9AF8B200D7A958 /* Sources */,
-				2B0539391D9AF8B200D7A958 /* Frameworks */,
-				2B05393A1D9AF8B200D7A958 /* Resources */,
+				712C9B311D9AFCCF004468B2 /* Sources */,
+				712C9B321D9AFCCF004468B2 /* Frameworks */,
+				712C9B331D9AFCCF004468B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Hub-APS";
-			productName = "Hub-APS";
-			productReference = 2B05393C1D9AF8B200D7A958 /* Hub-APS.app */;
+			name = hubAPS;
+			productName = hubAPS;
+			productReference = 712C9B351D9AFCCF004468B2 /* hubAPS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B0539341D9AF8B200D7A958 /* Project object */ = {
+		712C9B2D1D9AFCCF004468B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = aps;
+				ORGANIZATIONNAME = "Hilton Pintor Bezerra Leite";
 				TargetAttributes = {
-					2B05393B1D9AF8B200D7A958 = {
+					712C9B341D9AFCCF004468B2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4WDGXAFZJ6;
+						DevelopmentTeam = S85M726D6S;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 2B0539371D9AF8B200D7A958 /* Build configuration list for PBXProject "Hub-APS" */;
+			buildConfigurationList = 712C9B301D9AFCCF004468B2 /* Build configuration list for PBXProject "hubAPS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,55 +112,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 2B0539331D9AF8B200D7A958;
-			productRefGroup = 2B05393D1D9AF8B200D7A958 /* Products */;
+			mainGroup = 712C9B2C1D9AFCCF004468B2;
+			productRefGroup = 712C9B361D9AFCCF004468B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B05393B1D9AF8B200D7A958 /* Hub-APS */,
+				712C9B341D9AFCCF004468B2 /* hubAPS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B05393A1D9AF8B200D7A958 /* Resources */ = {
+		712C9B331D9AFCCF004468B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B05394F1D9AF8B200D7A958 /* LaunchScreen.storyboard in Resources */,
-				2B05394C1D9AF8B200D7A958 /* Assets.xcassets in Resources */,
-				2B05394A1D9AF8B200D7A958 /* Main.storyboard in Resources */,
+				712C9B461D9AFCCF004468B2 /* LaunchScreen.storyboard in Resources */,
+				712C9B431D9AFCCF004468B2 /* Assets.xcassets in Resources */,
+				712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B0539381D9AF8B200D7A958 /* Sources */ = {
+		712C9B311D9AFCCF004468B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0539471D9AF8B200D7A958 /* ViewController.m in Sources */,
-				2B0539441D9AF8B200D7A958 /* AppDelegate.m in Sources */,
-				2B0539411D9AF8B200D7A958 /* main.m in Sources */,
+				712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */,
+				712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */,
+				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2B0539481D9AF8B200D7A958 /* Main.storyboard */ = {
+		712C9B3C1D9AFCCF004468B2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B0539491D9AF8B200D7A958 /* Base */,
+				712C9B3D1D9AFCCF004468B2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2B05394D1D9AF8B200D7A958 /* LaunchScreen.storyboard */ = {
+		712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B05394E1D9AF8B200D7A958 /* Base */,
+				712C9B451D9AFCCF004468B2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -179,7 +168,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2B0539511D9AF8B200D7A958 /* Debug */ = {
+		712C9B481D9AFCCF004468B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,11 +212,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2B0539521D9AF8B200D7A958 /* Release */ = {
+		712C9B491D9AFCCF004468B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,56 +255,72 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2B0539541D9AF8B200D7A958 /* Debug */ = {
+		712C9B4B1D9AFCCF004468B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4WDGXAFZJ6;
-				INFOPLIST_FILE = "Hub-APS/Info.plist";
+				DEVELOPMENT_TEAM = S85M726D6S;
+				INFOPLIST_FILE = hubAPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aps.Hub-APS";
+				PRODUCT_BUNDLE_IDENTIFIER = aps.hubAPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		2B0539551D9AF8B200D7A958 /* Release */ = {
+		712C9B4C1D9AFCCF004468B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4WDGXAFZJ6;
-				INFOPLIST_FILE = "Hub-APS/Info.plist";
+				DEVELOPMENT_TEAM = S85M726D6S;
+				INFOPLIST_FILE = hubAPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aps.Hub-APS";
+				PRODUCT_BUNDLE_IDENTIFIER = aps.hubAPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B0539371D9AF8B200D7A958 /* Build configuration list for PBXProject "Hub-APS" */ = {
+		712C9B301D9AFCCF004468B2 /* Build configuration list for PBXProject "hubAPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B0539511D9AF8B200D7A958 /* Debug */,
-				2B0539521D9AF8B200D7A958 /* Release */,
+				712C9B481D9AFCCF004468B2 /* Debug */,
+				712C9B491D9AFCCF004468B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B0539531D9AF8B200D7A958 /* Build configuration list for PBXNativeTarget "Hub-APS" */ = {
+		712C9B4A1D9AFCCF004468B2 /* Build configuration list for PBXNativeTarget "hubAPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B0539541D9AF8B200D7A958 /* Debug */,
-				2B0539551D9AF8B200D7A958 /* Release */,
+				712C9B4B1D9AFCCF004468B2 /* Debug */,
+				712C9B4C1D9AFCCF004468B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				712C9B401D9AFCCF004468B2 /* hubAPS.xcdatamodel */,
+			);
+			currentVersion = 712C9B401D9AFCCF004468B2 /* hubAPS.xcdatamodel */;
+			path = hubAPS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 2B0539341D9AF8B200D7A958 /* Project object */;
+	rootObject = 712C9B2D1D9AFCCF004468B2 /* Project object */;
 }

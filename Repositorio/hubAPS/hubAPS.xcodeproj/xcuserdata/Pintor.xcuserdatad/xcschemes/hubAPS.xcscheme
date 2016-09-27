@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2B05393B1D9AF8B200D7A958"
-               BuildableName = "Hub-APS.app"
-               BlueprintName = "Hub-APS"
-               ReferencedContainer = "container:Hub-APS.xcodeproj">
+               BlueprintIdentifier = "712C9B341D9AFCCF004468B2"
+               BuildableName = "hubAPS.app"
+               BlueprintName = "hubAPS"
+               ReferencedContainer = "container:hubAPS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B05393B1D9AF8B200D7A958"
-            BuildableName = "Hub-APS.app"
-            BlueprintName = "Hub-APS"
-            ReferencedContainer = "container:Hub-APS.xcodeproj">
+            BlueprintIdentifier = "712C9B341D9AFCCF004468B2"
+            BuildableName = "hubAPS.app"
+            BlueprintName = "hubAPS"
+            ReferencedContainer = "container:hubAPS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B05393B1D9AF8B200D7A958"
-            BuildableName = "Hub-APS.app"
-            BlueprintName = "Hub-APS"
-            ReferencedContainer = "container:Hub-APS.xcodeproj">
+            BlueprintIdentifier = "712C9B341D9AFCCF004468B2"
+            BuildableName = "hubAPS.app"
+            BlueprintName = "hubAPS"
+            ReferencedContainer = "container:hubAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B05393B1D9AF8B200D7A958"
-            BuildableName = "Hub-APS.app"
-            BlueprintName = "Hub-APS"
-            ReferencedContainer = "container:Hub-APS.xcodeproj">
+            BlueprintIdentifier = "712C9B341D9AFCCF004468B2"
+            BuildableName = "hubAPS.app"
+            BlueprintName = "hubAPS"
+            ReferencedContainer = "container:hubAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

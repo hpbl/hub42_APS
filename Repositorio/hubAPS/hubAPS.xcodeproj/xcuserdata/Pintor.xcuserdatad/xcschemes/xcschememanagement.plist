@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Hub-APS.xcscheme</key>
+		<key>hubAPS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B05393B1D9AF8B200D7A958</key>
+		<key>712C9B341D9AFCCF004468B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
