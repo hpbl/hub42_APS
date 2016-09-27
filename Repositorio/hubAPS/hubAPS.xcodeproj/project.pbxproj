@@ -17,6 +17,9 @@
 		712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B4E1D9AFF04004468B2 /* Conta.swift */; };
 		712C9B511D9B0224004468B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B501D9B0224004468B2 /* Item.swift */; };
 		712C9B531D9B0830004468B2 /* Troca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B521D9B0830004468B2 /* Troca.swift */; };
+		712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */; };
+		712C9B5A1D9B1928004468B2 /* IRepositorioItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B591D9B1928004468B2 /* IRepositorioItens.swift */; };
+		712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		712C9B4E1D9AFF04004468B2 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		712C9B501D9B0224004468B2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		712C9B521D9B0830004468B2 /* Troca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Troca.swift; sourceTree = "<group>"; };
+		712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioContas.swift; sourceTree = "<group>"; };
+		712C9B591D9B1928004468B2 /* IRepositorioItens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioItens.swift; sourceTree = "<group>"; };
+		712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioTrocas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
+				712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */,
 			);
 			name = Conta;
 			sourceTree = "<group>";
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				712C9B521D9B0830004468B2 /* Troca.swift */,
+				712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */,
 			);
 			name = Troca;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				712C9B501D9B0224004468B2 /* Item.swift */,
+				712C9B591D9B1928004468B2 /* IRepositorioItens.swift */,
 			);
 			name = Item;
 			sourceTree = "<group>";
@@ -200,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712C9B5A1D9B1928004468B2 /* IRepositorioItens.swift in Sources */,
 				712C9B511D9B0224004468B2 /* Item.swift in Sources */,
 				712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */,
 				712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */,
+				712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */,
+				712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */,
 				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
 				712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */,
