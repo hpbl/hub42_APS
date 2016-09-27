@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149531D9B0B3C00D1C136 /* Fachada.swift */; };
 		712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B381D9AFCCF004468B2 /* AppDelegate.swift */; };
 		712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3A1D9AFCCF004468B2 /* ViewController.swift */; };
 		712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B3C1D9AFCCF004468B2 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B8149531D9B0B3C00D1C136 /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
 		712C9B351D9AFCCF004468B2 /* hubAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hubAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712C9B381D9AFCCF004468B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712C9B3A1D9AFCCF004468B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8149521D9B0B2E00D1C136 /* Negocios */ = {
+			isa = PBXGroup;
+			children = (
+				2B8149531D9B0B3C00D1C136 /* Fachada.swift */,
+			);
+			name = Negocios;
+			sourceTree = "<group>";
+		};
 		712C9B2C1D9AFCCF004468B2 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
+				2B8149521D9B0B2E00D1C136 /* Negocios */,
 				712C9B4D1D9AFDAB004468B2 /* Entities */,
 				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
 				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
@@ -163,6 +174,7 @@
 				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
 				712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */,
+				2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +338,7 @@
 				712C9B4C1D9AFCCF004468B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
