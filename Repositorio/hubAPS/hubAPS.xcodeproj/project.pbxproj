@@ -53,6 +53,47 @@
 			name = Negocios;
 			sourceTree = "<group>";
 		};
+		2B8149551D9B122300D1C136 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B3C1D9AFCCF004468B2 /* Main.storyboard */,
+				712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2B8149571D9B13BE00D1C136 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2B8149581D9B156800D1C136 /* Conta */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
+			);
+			name = Conta;
+			sourceTree = "<group>";
+		};
+		2B8149591D9B157B00D1C136 /* Troca */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B521D9B0830004468B2 /* Troca.swift */,
+			);
+			name = Troca;
+			sourceTree = "<group>";
+		};
+		2B81495A1D9B158700D1C136 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B501D9B0224004468B2 /* Item.swift */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
 		712C9B2C1D9AFCCF004468B2 = {
 			isa = PBXGroup;
 			children = (
@@ -72,27 +113,18 @@
 		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
+				2B81495A1D9B158700D1C136 /* Item */,
+				2B8149591D9B157B00D1C136 /* Troca */,
+				2B8149581D9B156800D1C136 /* Conta */,
+				2B8149571D9B13BE00D1C136 /* Controllers */,
+				2B8149551D9B122300D1C136 /* Views */,
 				2B8149521D9B0B2E00D1C136 /* Negocios */,
-				712C9B4D1D9AFDAB004468B2 /* Entities */,
 				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
-				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
-				712C9B3C1D9AFCCF004468B2 /* Main.storyboard */,
 				712C9B421D9AFCCF004468B2 /* Assets.xcassets */,
-				712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */,
 				712C9B471D9AFCCF004468B2 /* Info.plist */,
 				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
 			);
 			path = hubAPS;
-			sourceTree = "<group>";
-		};
-		712C9B4D1D9AFDAB004468B2 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
-				712C9B501D9B0224004468B2 /* Item.swift */,
-				712C9B521D9B0830004468B2 /* Troca.swift */,
-			);
-			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
