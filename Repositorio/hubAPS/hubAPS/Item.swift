@@ -21,5 +21,10 @@ class Item {
         self.foto = foto
     }
     
-    
+    func item(nome: String, foto: UIImage) {
+        self.nome = nome
+        self.foto = foto
+        
+        //TODO: Ver como inicializar o id
+    }
 }
