@@ -13,6 +13,9 @@
 		712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */; };
 		712C9B431D9AFCCF004468B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B421D9AFCCF004468B2 /* Assets.xcassets */; };
 		712C9B461D9AFCCF004468B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B441D9AFCCF004468B2 /* LaunchScreen.storyboard */; };
+		712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B4E1D9AFF04004468B2 /* Conta.swift */; };
+		712C9B511D9B0224004468B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B501D9B0224004468B2 /* Item.swift */; };
+		712C9B531D9B0830004468B2 /* Troca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B521D9B0830004468B2 /* Troca.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		712C9B421D9AFCCF004468B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712C9B451D9AFCCF004468B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712C9B471D9AFCCF004468B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712C9B4E1D9AFF04004468B2 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		712C9B501D9B0224004468B2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		712C9B521D9B0830004468B2 /* Troca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Troca.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
+				712C9B4D1D9AFDAB004468B2 /* Entities */,
 				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
 				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
 				712C9B3C1D9AFCCF004468B2 /* Main.storyboard */,
@@ -65,6 +72,16 @@
 				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
 			);
 			path = hubAPS;
+			sourceTree = "<group>";
+		};
+		712C9B4D1D9AFDAB004468B2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
+				712C9B501D9B0224004468B2 /* Item.swift */,
+				712C9B521D9B0830004468B2 /* Troca.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712C9B511D9B0224004468B2 /* Item.swift in Sources */,
 				712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */,
 				712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */,
+				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
+				712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
