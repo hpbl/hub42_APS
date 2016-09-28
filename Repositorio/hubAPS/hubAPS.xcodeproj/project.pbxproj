@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149531D9B0B3C00D1C136 /* Fachada.swift */; };
 		2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */; };
-		2B81495E1D9B196A00D1C136 /* FabricaRepositoriosConcreto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495D1D9B196A00D1C136 /* FabricaRepositoriosConcreto.swift */; };
+		2B81495E1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */; };
+		2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495F1D9B396700D1C136 /* CadastroItens.swift */; };
+		2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149611D9B397200D1C136 /* CadastroContas.swift */; };
+		2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */; };
+		2B8149671D9B453700D1C136 /* ControladorCadastroItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */; };
+		2B8149691D9B455600D1C136 /* ControladorLoginFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */; };
+		2B81496D1D9B4B2400D1C136 /* ContaNativa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */; };
 		712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B381D9AFCCF004468B2 /* AppDelegate.swift */; };
 		712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3A1D9AFCCF004468B2 /* ViewController.swift */; };
 		712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B3C1D9AFCCF004468B2 /* Main.storyboard */; };
@@ -22,12 +28,22 @@
 		712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */; };
 		712C9B5A1D9B1928004468B2 /* IRepositorioItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B591D9B1928004468B2 /* IRepositorioItens.swift */; };
 		712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */; };
+		DAB50FC21D9B47310047C061 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB50FC11D9B47310047C061 /* AddItemViewController.swift */; };
+		DAB50FC71D9B4DD50047C061 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC41D9B4DD50047C061 /* FBSDKCoreKit.framework */; };
+		DAB50FC81D9B4DD50047C061 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC51D9B4DD50047C061 /* FBSDKLoginKit.framework */; };
+		DAB50FC91D9B4DD50047C061 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC61D9B4DD50047C061 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B8149531D9B0B3C00D1C136 /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
 		2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositorios.swift; sourceTree = "<group>"; };
-		2B81495D1D9B196A00D1C136 /* FabricaRepositoriosConcreto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosConcreto.swift; sourceTree = "<group>"; };
+		2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosCloudKit.swift; sourceTree = "<group>"; };
+		2B81495F1D9B396700D1C136 /* CadastroItens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroItens.swift; sourceTree = "<group>"; };
+		2B8149611D9B397200D1C136 /* CadastroContas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroContas.swift; sourceTree = "<group>"; };
+		2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroTrocas.swift; sourceTree = "<group>"; };
+		2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorCadastroItem.swift; sourceTree = "<group>"; };
+		2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorLoginFB.swift; sourceTree = "<group>"; };
+		2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaNativa.swift; sourceTree = "<group>"; };
 		712C9B351D9AFCCF004468B2 /* hubAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hubAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712C9B381D9AFCCF004468B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712C9B3A1D9AFCCF004468B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +58,10 @@
 		712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioContas.swift; sourceTree = "<group>"; };
 		712C9B591D9B1928004468B2 /* IRepositorioItens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioItens.swift; sourceTree = "<group>"; };
 		712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioTrocas.swift; sourceTree = "<group>"; };
+		DAB50FC11D9B47310047C061 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		DAB50FC41D9B4DD50047C061 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		DAB50FC51D9B4DD50047C061 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DAB50FC61D9B4DD50047C061 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB50FC81D9B4DD50047C061 /* FBSDKLoginKit.framework in Frameworks */,
+				DAB50FC71D9B4DD50047C061 /* FBSDKCoreKit.framework in Frameworks */,
+				DAB50FC91D9B4DD50047C061 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +83,12 @@
 			children = (
 				2B8149531D9B0B3C00D1C136 /* Fachada.swift */,
 				2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */,
-				2B81495D1D9B196A00D1C136 /* FabricaRepositoriosConcreto.swift */,
+				2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */,
+				2B81495F1D9B396700D1C136 /* CadastroItens.swift */,
+				2B8149611D9B397200D1C136 /* CadastroContas.swift */,
+				2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */,
+				2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */,
+				2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */,
 			);
 			name = Negocios;
 			sourceTree = "<group>";
@@ -78,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				712C9B3A1D9AFCCF004468B2 /* ViewController.swift */,
+				DAB50FC11D9B47310047C061 /* AddItemViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
+				2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */,
 				712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */,
 			);
 			name = Conta;
@@ -128,6 +158,7 @@
 		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
+				DAB50FC31D9B4DC10047C061 /* Frameworks */,
 				2B81495A1D9B158700D1C136 /* Item */,
 				2B8149591D9B157B00D1C136 /* Troca */,
 				2B8149581D9B156800D1C136 /* Conta */,
@@ -140,6 +171,16 @@
 				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
 			);
 			path = hubAPS;
+			sourceTree = "<group>";
+		};
+		DAB50FC31D9B4DC10047C061 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB50FC41D9B4DD50047C061 /* FBSDKCoreKit.framework */,
+				DAB50FC51D9B4DD50047C061 /* FBSDKLoginKit.framework */,
+				DAB50FC61D9B4DD50047C061 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +261,20 @@
 				712C9B411D9AFCCF004468B2 /* hubAPS.xcdatamodeld in Sources */,
 				712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */,
 				712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */,
+				DAB50FC21D9B47310047C061 /* AddItemViewController.swift in Sources */,
+				2B8149691D9B455600D1C136 /* ControladorLoginFB.swift in Sources */,
 				712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */,
-				2B81495E1D9B196A00D1C136 /* FabricaRepositoriosConcreto.swift in Sources */,
+				2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */,
+				2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */,
+				2B81495E1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */,
+				2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */,
 				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
 				712C9B4F1D9AFF04004468B2 /* Conta.swift in Sources */,
+				2B81496D1D9B4B2400D1C136 /* ContaNativa.swift in Sources */,
 				2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */,
 				2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */,
+				2B8149671D9B453700D1C136 /* ControladorCadastroItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S85M726D6S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hubAPS",
+				);
 				INFOPLIST_FILE = hubAPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aps.hubAPS;
@@ -363,6 +415,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S85M726D6S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hubAPS",
+				);
 				INFOPLIST_FILE = hubAPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aps.hubAPS;

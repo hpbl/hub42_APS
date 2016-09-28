@@ -11,7 +11,9 @@ import UIKit
 
 class Fachada {
     
-    private init(){}
+    private init() {
+        
+    }
     
     /*Singleton pattern implementation*/
     private static var _instance: Fachada?
