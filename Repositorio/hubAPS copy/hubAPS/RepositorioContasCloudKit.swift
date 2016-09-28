@@ -30,8 +30,8 @@ class RepositorioContasCloudKit : IRepositorioContas{
         contaRecord.setObject(conta.senha as CKRecordValue?, forKey: "senha")
 
         publicDB.save(contaRecord) { (record, error) in
-            if ((error) != nil) {
-                callback(error!)
+            if ((error) == nil) {
+                callback(error)
             }
         }
     }
@@ -41,12 +41,12 @@ class RepositorioContasCloudKit : IRepositorioContas{
         let query = CKQuery(recordType: "Conta", predicate: predicate);
         
         publicDB.perform(query, inZoneWith: nil) { (records, error) in
-            if (records != nil) {
+            if ((records?.count)! > 0) {
                 
                 let id = records?[0].object(forKey: "id") as! String
                 let email = records?[0].object(forKey: "email") as! String
                 let senha = records?[0].object(forKey: "senha") as! String
-                let itens = records?[0].object(forKey: "itens") as! [String]
+                let itens = records?[0].object(forKey: "itens") as? [String]
                 let localizacao = records?[0].object(forKey: "localizacao") as! CLLocation
 
                 
@@ -60,7 +60,7 @@ class RepositorioContasCloudKit : IRepositorioContas{
         let query = CKQuery(recordType: "Conta", predicate: predicate);
         
         publicDB.perform(query, inZoneWith: nil) { (records, error) in
-            if (records != nil) {
+            if (records?.count == 0) {
                 callback(true, error)
             } else {
                 callback(false, error)
@@ -73,18 +73,20 @@ class RepositorioContasCloudKit : IRepositorioContas{
         let query = CKQuery(recordType: "Conta", predicate: predicate);
         
         publicDB.perform(query, inZoneWith: nil) { (records, error) in
-            if (records != nil) {
+            if ((records?.count)! > 0) {
 
-                let id = records?[0].object(forKey: "id") as! String
-                let email = records?[0].object(forKey: "email") as! String
-                let senha = records?[0].object(forKey: "senha") as! String
-                let localizacao = records?[0].object(forKey: "localizacao") as! CLLocation
-                var itens = records?[0].object(forKey: "itens") as! [String]
-                itens.append(idItem)
+                var itens = records?[0].object(forKey: "itens") as? [String]
                 
-                let conta = Conta(id: id, email: email, senha: senha , itens: itens, localizacao: localizacao)
+                if (itens == nil) {
+                    itens = []
+                }
+                itens?.append(idItem)
                 
-                self.inserirConta(conta: conta, callback: callback)
+                records?[0].setObject(itens as CKRecordValue?, forKey: "itens")
+                
+                self.publicDB.save((records?[0])!, completionHandler: { (record, error) in
+                    callback(error)
+                })
             }
         }
     }
@@ -94,7 +96,7 @@ class RepositorioContasCloudKit : IRepositorioContas{
         let query = CKQuery(recordType: "Conta", predicate: predicate);
         
         publicDB.perform(query, inZoneWith: nil) { (records, error) in
-            if (records != nil) {
+            if ((records?.count)! > 0) {
                 
                 records?[0].setObject(conta.email as CKRecordValue?, forKey: "email")
                 records?[0].setObject(conta.itens as CKRecordValue?, forKey: "itens")

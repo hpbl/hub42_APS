@@ -14,10 +14,10 @@ class Conta{
     var id : String
     var email : String
     var senha : String
-    var itens : [String]
+    var itens : [String]?
     var localizacao : CLLocation
     
-    init(id: String, email: String, senha: String, itens: [String], localizacao: CLLocation) {
+    init(id: String, email: String, senha: String, itens: [String]?, localizacao: CLLocation) {
         self.id = id
         self.email = email
         self.senha = senha
@@ -25,7 +25,7 @@ class Conta{
         self.localizacao = localizacao
     }
     
-    init(email: String, senha: String, itens: [String], localizacao: CLLocation) {
+    init(email: String, senha: String, itens: [String]?, localizacao: CLLocation) {
         self.id = NSUUID().uuidString
         self.email = email
         self.senha = senha
@@ -33,7 +33,7 @@ class Conta{
         self.localizacao = localizacao
     }
     
-    init(email: String, itens: [String], localizacao: CLLocation) {
+    init(email: String, itens: [String]?, localizacao: CLLocation) {
         self.id = NSUUID().uuidString
         self.email = email
         self.senha = "FacebookNaoTemSenha" //TODO: trocar por outra?
