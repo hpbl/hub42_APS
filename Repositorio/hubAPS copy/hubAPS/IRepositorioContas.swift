@@ -10,10 +10,15 @@ import Foundation
 
 protocol IRepositorioContas {
     
-    func verificarEmail(email: String)
-    func inserirConta(conta: Conta)
-    func getConta(email: String) -> Conta
-    func atualizarConta(conta: Conta)
-    func encontrarDonoItem(item: Item) -> Conta
-    func inserirItem(Item: Item, conta: Conta)
+    func inserirConta(conta: Conta, callback: @escaping (Error?) -> ())
+    
+    func getConta(idConta: String, callback: @escaping (Conta?, Error?) -> ())
+    
+    func verificarEmail(email: String, callback: @escaping (Bool?, Error?) -> ())
+    
+    func atualizarConta(conta: Conta, callback: @escaping (Error?) -> ())
+    
+    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ())
+    
+    func encontrarDonoItem(idItem: String, callback: (Conta?, Error?) -> ())
 }

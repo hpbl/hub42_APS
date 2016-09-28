@@ -16,27 +16,27 @@ class CadastroContas {
     
     var repositorio : IRepositorioContas
     
-    func verificarEmail(email: String) {
-        self.repositorio.verificarEmail(email: email)
+    func verificarEmail(email: String, callback: @escaping (Bool?, Error?) -> ()){
+        self.repositorio.verificarEmail(email: email, callback: callback)
     }
     
-    func inserirConta(conta: Conta) {
-        self.repositorio.inserirConta(conta: conta)
+    func inserirConta(conta: Conta, callback: @escaping (Error?) -> ()){
+        self.repositorio.inserirConta(conta: conta, callback:callback)
     }
     
-    func getConta(email: String) -> Conta {
-        return self.repositorio.getConta(email: email)
+    func getConta(idConta: String, callback: @escaping (Conta?, Error?) -> ()){
+        return self.repositorio.getConta(idConta: idConta, callback: callback)
     }
     
-    func atualizarConta(conta: Conta) {
-        self.repositorio.atualizarConta(conta: conta)
+    func atualizarConta(conta: Conta, callback: @escaping (Error?) -> ()){
+        self.repositorio.atualizarConta(conta: conta, callback: callback)
     }
     
-    func encontrarDonoItem(item: Item) -> Conta {
-        return self.repositorio.encontrarDonoItem(item: item)
-    }
+    /*func encontrarDonoItem(idItem: String, callback: (Conta?, Error?) -> ()){
+        return self.repositorio.encontrarDonoItem(item: idItem)
+    }*/
     
-    func inserirItem(item: Item, conta: Conta) {
-        self.repositorio.inserirItem(Item: item, conta: conta)
+    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ()){
+        self.repositorio.inserirItem(idItem: idItem, conta: conta, callback: callback)
     }
 }

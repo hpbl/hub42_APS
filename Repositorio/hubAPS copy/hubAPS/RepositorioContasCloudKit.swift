@@ -10,6 +10,7 @@ import Foundation
 import CloudKit
 
 class RepositorioContasCloudKit : IRepositorioContas{
+
     
     private let container : CKContainer
     private let publicDB : CKDatabase
@@ -45,11 +46,11 @@ class RepositorioContasCloudKit : IRepositorioContas{
                 let id = records?[0].object(forKey: "id") as! String
                 let email = records?[0].object(forKey: "email") as! String
                 let senha = records?[0].object(forKey: "senha") as! String
-                let itens = records?[0].object(forKey: "itens") as! Array<Int>
+                let itens = records?[0].object(forKey: "itens") as! [String]
                 let localizacao = records?[0].object(forKey: "localizacao") as! CLLocation
 
                 
-                //callback(Conta(id: id, email: email, senha: senha , itens: itens, localizacao: localizacao), error)
+                callback(Conta(id: id, email: email, senha: senha , itens: itens, localizacao: localizacao), error)
             }
         }
     }
@@ -66,6 +67,50 @@ class RepositorioContasCloudKit : IRepositorioContas{
             }
         }
     }
+    
+    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ()){
+        let predicate : NSPredicate = NSPredicate(format: "id == %@", conta.id)
+        let query = CKQuery(recordType: "Conta", predicate: predicate);
+        
+        publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if (records != nil) {
+
+                let id = records?[0].object(forKey: "id") as! String
+                let email = records?[0].object(forKey: "email") as! String
+                let senha = records?[0].object(forKey: "senha") as! String
+                let localizacao = records?[0].object(forKey: "localizacao") as! CLLocation
+                var itens = records?[0].object(forKey: "itens") as! [String]
+                itens.append(idItem)
+                
+                let conta = Conta(id: id, email: email, senha: senha , itens: itens, localizacao: localizacao)
+                
+                self.inserirConta(conta: conta, callback: callback)
+            }
+        }
+    }
+    
+    func atualizarConta(conta: Conta, callback: @escaping (Error?) -> ()){
+        let predicate : NSPredicate = NSPredicate(format: "id == %@", conta.id)
+        let query = CKQuery(recordType: "Conta", predicate: predicate);
+        
+        publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if (records != nil) {
+                
+                records?[0].setObject(conta.email as CKRecordValue?, forKey: "email")
+                records?[0].setObject(conta.itens as CKRecordValue?, forKey: "itens")
+                records?[0].setObject(conta.localizacao, forKey: "localizacao")
+                records?[0].setObject(conta.senha as CKRecordValue?, forKey: "senha")
+                
+                self.publicDB.save((records?[0])!, completionHandler: { (record, error) in
+                    callback(error)
+                })
+            }
+        }
+        
+    }
+    
+    func encontrarDonoItem(idItem: String, callback: (Conta?, Error?) -> ()){}
+
 
     
 
