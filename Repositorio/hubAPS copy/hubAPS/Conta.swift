@@ -17,7 +17,15 @@ class Conta{
     var itens : Array<Int>
     var localizacao : CLLocation
     
-    init(id: Int, email: String, senha: String, itens: Array<Int>, localizacao: CLLocation) {
+    init(id: String, email: String, senha: String, itens: Array<Int>, localizacao: CLLocation) {
+        self.id = id
+        self.email = email
+        self.senha = senha
+        self.itens = itens
+        self.localizacao = localizacao
+    }
+    
+    init(email: String, senha: String, itens: Array<Int>, localizacao: CLLocation) {
         self.id = NSUUID().uuidString
         self.email = email
         self.senha = senha
