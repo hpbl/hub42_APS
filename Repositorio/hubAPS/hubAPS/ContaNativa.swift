@@ -14,8 +14,8 @@ class ContaNativa: Conta {
     var senha : String
     
     init(id: Int, senha: String,  email: String, itens: Array<Int>, localizacao: CLLocation){
-        super.init(id: id, email: email, itens: itens, localizacao: localizacao)
         self.senha = senha;
+        super.init(id: id, email: email, itens: itens, localizacao: localizacao)
     }
     
 }

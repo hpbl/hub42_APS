@@ -1,5 +1,5 @@
 //
-//  RepositorioContasCloudKit.swift
+//  RepositorioItens.swift
 //  hubAPS
 //
 //  Created by Ian Manor on 9/27/16.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class RepositorioTrocasCloudKit : IRepositorioTrocas {
+class RepositorioItensCloudKit : IRepositorioItens {
     
 }

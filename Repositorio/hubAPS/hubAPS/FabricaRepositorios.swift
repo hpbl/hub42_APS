@@ -19,15 +19,15 @@ protocol FabricaRepositorios {
 extension FabricaRepositorios {
     
     func criarRepositorioContas() -> IRepositorioContas {
-        
+        return FabricaRepositoriosCloudKit.criarRepositorioContas()
     }
     
     func criarRepositorioItens() -> IRepositorioItens {
-        
+        return FabricaRepositoriosCloudKit.criarRepositorioItens()
     }
     
     func criarRepositorioTrocas() -> IRepositorioTrocas {
-        
+        return FabricaRepositoriosCloudKit.criarRepositorioTrocas()
     }
     
 }

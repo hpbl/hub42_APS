@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149531D9B0B3C00D1C136 /* Fachada.swift */; };
 		2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */; };
-		2B81495E1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */; };
 		2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495F1D9B396700D1C136 /* CadastroItens.swift */; };
 		2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149611D9B397200D1C136 /* CadastroContas.swift */; };
 		2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */; };
 		2B8149671D9B453700D1C136 /* ControladorCadastroItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */; };
-		2B8149691D9B455600D1C136 /* ControladorLoginFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */; };
 		2B81496D1D9B4B2400D1C136 /* ContaNativa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */; };
+		2B81496F1D9B539B00D1C136 /* ControladorLoginFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81496E1D9B539B00D1C136 /* ControladorLoginFB.swift */; };
+		2B8149711D9B53CA00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149701D9B53CA00D1C136 /* FabricaRepositoriosCloudKit.swift */; };
+		2B8149731D9B564E00D1C136 /* RepositorioItensCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149721D9B564E00D1C136 /* RepositorioItensCloudKit.swift */; };
+		2B8149751D9B565700D1C136 /* RepositorioTrocasCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149741D9B565700D1C136 /* RepositorioTrocasCloudKit.swift */; };
+		2B8149791D9B574A00D1C136 /* RepositorioContasCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149781D9B574A00D1C136 /* RepositorioContasCloudKit.swift */; };
 		712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B381D9AFCCF004468B2 /* AppDelegate.swift */; };
 		712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B3A1D9AFCCF004468B2 /* ViewController.swift */; };
 		712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B3C1D9AFCCF004468B2 /* Main.storyboard */; };
@@ -37,13 +40,16 @@
 /* Begin PBXFileReference section */
 		2B8149531D9B0B3C00D1C136 /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
 		2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositorios.swift; sourceTree = "<group>"; };
-		2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosCloudKit.swift; sourceTree = "<group>"; };
 		2B81495F1D9B396700D1C136 /* CadastroItens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroItens.swift; sourceTree = "<group>"; };
 		2B8149611D9B397200D1C136 /* CadastroContas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroContas.swift; sourceTree = "<group>"; };
 		2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroTrocas.swift; sourceTree = "<group>"; };
 		2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorCadastroItem.swift; sourceTree = "<group>"; };
-		2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorLoginFB.swift; sourceTree = "<group>"; };
 		2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaNativa.swift; sourceTree = "<group>"; };
+		2B81496E1D9B539B00D1C136 /* ControladorLoginFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorLoginFB.swift; sourceTree = "<group>"; };
+		2B8149701D9B53CA00D1C136 /* FabricaRepositoriosCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosCloudKit.swift; sourceTree = "<group>"; };
+		2B8149721D9B564E00D1C136 /* RepositorioItensCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioItensCloudKit.swift; sourceTree = "<group>"; };
+		2B8149741D9B565700D1C136 /* RepositorioTrocasCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioTrocasCloudKit.swift; sourceTree = "<group>"; };
+		2B8149781D9B574A00D1C136 /* RepositorioContasCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioContasCloudKit.swift; sourceTree = "<group>"; };
 		712C9B351D9AFCCF004468B2 /* hubAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hubAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712C9B381D9AFCCF004468B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712C9B3A1D9AFCCF004468B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,12 +89,12 @@
 			children = (
 				2B8149531D9B0B3C00D1C136 /* Fachada.swift */,
 				2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */,
-				2B81495D1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift */,
+				2B8149701D9B53CA00D1C136 /* FabricaRepositoriosCloudKit.swift */,
 				2B81495F1D9B396700D1C136 /* CadastroItens.swift */,
 				2B8149611D9B397200D1C136 /* CadastroContas.swift */,
 				2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */,
 				2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */,
-				2B8149681D9B455600D1C136 /* ControladorLoginFB.swift */,
+				2B81496E1D9B539B00D1C136 /* ControladorLoginFB.swift */,
 			);
 			name = Negocios;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 				712C9B4E1D9AFF04004468B2 /* Conta.swift */,
 				2B81496C1D9B4B2400D1C136 /* ContaNativa.swift */,
 				712C9B571D9B16AF004468B2 /* IRepositorioContas.swift */,
+				2B8149781D9B574A00D1C136 /* RepositorioContasCloudKit.swift */,
 			);
 			name = Conta;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 			children = (
 				712C9B521D9B0830004468B2 /* Troca.swift */,
 				712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */,
+				2B8149741D9B565700D1C136 /* RepositorioTrocasCloudKit.swift */,
 			);
 			name = Troca;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			children = (
 				712C9B501D9B0224004468B2 /* Item.swift */,
 				712C9B591D9B1928004468B2 /* IRepositorioItens.swift */,
+				2B8149721D9B564E00D1C136 /* RepositorioItensCloudKit.swift */,
 			);
 			name = Item;
 			sourceTree = "<group>";
@@ -262,11 +271,11 @@
 				712C9B3B1D9AFCCF004468B2 /* ViewController.swift in Sources */,
 				712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */,
 				DAB50FC21D9B47310047C061 /* AddItemViewController.swift in Sources */,
-				2B8149691D9B455600D1C136 /* ControladorLoginFB.swift in Sources */,
+				2B81496F1D9B539B00D1C136 /* ControladorLoginFB.swift in Sources */,
 				712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */,
 				2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */,
 				2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */,
-				2B81495E1D9B196A00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */,
+				2B8149711D9B53CA00D1C136 /* FabricaRepositoriosCloudKit.swift in Sources */,
 				2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */,
 				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
@@ -274,7 +283,10 @@
 				2B81496D1D9B4B2400D1C136 /* ContaNativa.swift in Sources */,
 				2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */,
 				2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */,
+				2B8149751D9B565700D1C136 /* RepositorioTrocasCloudKit.swift in Sources */,
 				2B8149671D9B453700D1C136 /* ControladorCadastroItem.swift in Sources */,
+				2B8149791D9B574A00D1C136 /* RepositorioContasCloudKit.swift in Sources */,
+				2B8149731D9B564E00D1C136 /* RepositorioItensCloudKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
