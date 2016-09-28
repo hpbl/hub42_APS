@@ -19,7 +19,6 @@ class Conta{
     init(id: String, email: String, senha: String, itens: Array<Int>, localizacao: CLLocation) {
         self.id = id
         self.email = email
-        self.senha = senha
         self.itens = itens
         self.localizacao = localizacao
     }
