@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import CoreLocation
+
+class ControladorLoginFB {
+    
+    var cadastroContas : CadastroContas
+    
+    init(repositorioContas:IRepositorioContas) {
+        self.cadastroContas = CadastroContas(repositorio: repositorioContas)
+    }
+    
+    func efetuarLoginFB() {
+        //let conta = Conta(id: <#T##Int#>, email: <#T##String#>, itens: <#T##Array<Int>#>, localizacao: <#T##CLLocation#>)
+        //self.cadastroContas.inserirConta(conta: conta)
+    }
+}
