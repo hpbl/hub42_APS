@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func pressBtnFacebook(_ sender: AnyObject) {
+    }
+    
+    
+    func efetuarLoginFB(){
+    }
+    
 
 }
 

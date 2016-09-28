@@ -10,21 +10,18 @@ import Foundation
 
 class Troca {
     
-    var remetente : Conta
-    var destinatario : Conta
-    var remetenteItem : Item
-    var destinatarioItem : Item
+    var id : String
+    var idRemetente : String
+    var idDestinatario : String
+    var idRemetenteItem : String
+    var idDestinatarioItem : String
     
-    init(remetente: Conta, destinatario: Conta, remetenteItem: Item, destinatarioItem : Item) {
-        self.remetente = remetente
-        self.destinatario = destinatario
-        self.remetenteItem = remetenteItem
-        self.destinatarioItem = destinatarioItem
-    }
-    
-    func troca(remetente: Conta, destinatario: Conta, remetenteItem: Item, destinatarioItem : Item) -> Conta {
-        return troca(remetente: remetente, destinatario: destinatario, remetenteItem: remetenteItem, destinatarioItem: destinatarioItem)
-        
+    init(idRemetente: String, idDestinatario: String, idRemetenteItem: String, idDestinatarioItem : String) {
+        self.id = NSUUID().uuidString
+        self.idRemetente = idRemetente
+        self.idDestinatario = idDestinatario
+        self.idRemetenteItem = idRemetenteItem
+        self.idDestinatarioItem = idDestinatarioItem
     }
     
 }

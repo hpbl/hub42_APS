@@ -13,5 +13,21 @@ protocol FabricaRepositorios {
     func criarRepositorioContas() -> IRepositorioContas
     func criarRepositorioItens() -> IRepositorioItens
     func criarRepositorioTrocas() -> IRepositorioTrocas
+    
+}
 
+extension FabricaRepositorios {
+    
+    func criarRepositorioContas() -> IRepositorioContas {
+        
+    }
+    
+    func criarRepositorioItens() -> IRepositorioItens {
+        
+    }
+    
+    func criarRepositorioTrocas() -> IRepositorioTrocas {
+        
+    }
+    
 }

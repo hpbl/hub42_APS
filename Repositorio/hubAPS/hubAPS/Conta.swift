@@ -10,33 +10,17 @@ import Foundation
 import CoreLocation
 
 class Conta{
-
+    
+    var id : String
     var email : String
-    var senha : String
-    var itens : Array<Item>
+    var itens : Array<Int>
     var localizacao : CLLocation
     
-    init(email: String, senha: String, itens: Array<Item>, localizacao: CLLocation) {
+    init(id: Int, email: String, itens: Array<Int>, localizacao: CLLocation) {
+        self.id = NSUUID().uuidString
         self.email = email
-        self.senha = senha
         self.itens = itens
         self.localizacao = localizacao
     }
-    
-    func conta(email: String, senha: String, localizacao: CLLocation) {
-        self.email = email
-        self.senha = senha
-        self.localizacao = localizacao
-        self.itens = []
-    }
-    
-    func instanciarContaFB(email: String) {
-        self.email = email
-        //TODO: descobrir qual a lógica dessa função
-    }
-    
-    
-    
-
     
 }
