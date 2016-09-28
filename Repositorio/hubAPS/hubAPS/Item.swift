@@ -15,16 +15,9 @@ class Item {
     var nome : String
     var foto : UIImage
     
-    init(id: String, nome: String, foto: UIImage) {
-        self.id = id
+    init(nome: String, foto: UIImage) {
+        self.id = NSUUID().uuidString
         self.nome = nome
         self.foto = foto
-    }
-    
-    func item(nome: String, foto: UIImage) {
-        self.nome = nome
-        self.foto = foto
-        
-        //TODO: Ver como inicializar o id
     }
 }
