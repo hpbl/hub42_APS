@@ -7,19 +7,20 @@
 //
 
 import Foundation
-
+/*
 public class FabricaRepositoriosConcreto : FabricaRepositorios {
     
     func criarRepositorioContas() -> IRepositorioContas {
-    <#code#>
+    code
     }
     
     func criarRepositorioItens() -> IRepositorioItens {
-    <#code#>
+    code
     }
     
     func criarRepositorioTrocas() -> IRepositorioTrocas {
-    <#code#>
+    code
     }
     
 }
+*/
