@@ -8,32 +8,29 @@
 
 import UIKit
 
-class AddItemViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    //MARK: - Outlets e Variaveis
+    let picker = UIImagePickerController()
     
     @IBOutlet weak var image: UIImageView!
 
     
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
-    }
-    
-    
-    @IBAction func pressAddBtn(_ sender: AnyObject) {
         indicadorAtv.startAnimating()
         //TODO: chmar func de inserir item
         
         //TODO: indicadorAtv.stopAnimating() dentro do callback
-        
+    }
+    
+    
+    @IBAction func pressAddBtn(_ sender: AnyObject) {
+        //abrindo camera
+        picker.allowsEditing = false
+        picker.sourceType = UIImagePickerControllerSourceType.camera
+        picker.cameraCaptureMode = .photo
+        picker.modalPresentationStyle = .fullScreen
+        present(picker, animated: true, completion: nil)
     }
     
 
@@ -42,6 +39,21 @@ class AddItemViewController: UIViewController {
     }
     
     @IBOutlet weak var indicadorAtv: UIActivityIndicatorView!
+    
+    // MARK: - Ciclo de vida da View
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        picker.delegate = self
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     /*
     // MARK: - Navigation
@@ -52,5 +64,18 @@ class AddItemViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //MARK: - Metodos do Imagepicker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]){
+        
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        self.image.contentMode = .scaleAspectFill
+        self.image.image = chosenImage
+        dismiss(animated: true, completion: nil)
+    }
 }

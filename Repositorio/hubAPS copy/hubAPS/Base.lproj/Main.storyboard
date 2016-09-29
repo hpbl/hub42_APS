@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJk-J2-tIq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -61,7 +61,7 @@
                                     <action selector="pressSaveBtn:" destination="zJk-J2-tIq" eventType="touchUpInside" id="VbM-f5-rsR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl"/>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
                                 <color key="color" red="0.057012024575167776" green="0.022519924496644295" blue="0.90070290907046979" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
@@ -70,7 +70,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="y9Q-8V-oHl" secondAttribute="trailing" constant="52" id="2ih-rK-7Dc"/>
                             <constraint firstItem="ved-yU-1R4" firstAttribute="centerY" secondItem="qIy-s0-o95" secondAttribute="centerY" id="8qb-2g-78F"/>
-                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="43" id="EPs-CH-qJi"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="60" id="EPs-CH-qJi"/>
                             <constraint firstItem="ved-yU-1R4" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="Jzq-qE-1rO"/>
                             <constraint firstItem="b9d-2M-tQ6" firstAttribute="top" secondItem="d6j-ij-Cuc" secondAttribute="bottom" constant="117" id="SVQ-Nx-beL"/>
                             <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="qIy-s0-o95" secondAttribute="leadingMargin" constant="51" id="Sda-18-g5B"/>
@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4h6-gg-ebM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="107"/>
+            <point key="canvasLocation" x="677.60000000000002" y="106.59670164917542"/>
         </scene>
     </scenes>
 </document>
