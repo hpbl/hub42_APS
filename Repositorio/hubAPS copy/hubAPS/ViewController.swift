@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
+    let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        loginFacebook()//Metodo que chama facebook
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,12 +29,13 @@ class ViewController: UIViewController {
 
     
     @IBAction func pressBtnFacebook(_ sender: AnyObject) {
+       // self.fazerLogin()
     }
     
     
     func efetuarLoginFB(){
+   
     }
     
-
 }
 
