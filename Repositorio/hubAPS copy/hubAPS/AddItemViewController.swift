@@ -8,13 +8,14 @@
 
 import UIKit
 
-class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
     
     //MARK: - Outlets e Variaveis
     let picker = UIImagePickerController()
     
     @IBOutlet weak var image: UIImageView!
 
+    @IBOutlet weak var textField: UITextField!
     
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
         indicadorAtv.startAnimating()
@@ -47,7 +48,8 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         // Do any additional setup after loading the view.
         picker.delegate = self
-        
+        textField.delegate = self
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,4 +80,11 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.image.image = chosenImage
         dismiss(animated: true, completion: nil)
     }
+    
+    //MARK: - Metodos do TextField
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
 }
