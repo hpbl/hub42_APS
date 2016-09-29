@@ -29,6 +29,11 @@ class AddItemViewController: UIViewController {
     
     
     @IBAction func pressAddBtn(_ sender: AnyObject) {
+        indicadorAtv.startAnimating()
+        //TODO: chmar func de inserir item
+        
+        //TODO: indicadorAtv.stopAnimating() dentro do callback
+        
     }
     
 
@@ -36,6 +41,7 @@ class AddItemViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var indicadorAtv: UIActivityIndicatorView!
     
     /*
     // MARK: - Navigation

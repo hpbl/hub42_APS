@@ -62,11 +62,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
+                                <color key="color" red="0.057012024575167776" green="0.022519924496644295" blue="0.90070290907046979" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="y9Q-8V-oHl" secondAttribute="trailing" constant="52" id="2ih-rK-7Dc"/>
+                            <constraint firstItem="ved-yU-1R4" firstAttribute="centerY" secondItem="qIy-s0-o95" secondAttribute="centerY" id="8qb-2g-78F"/>
                             <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="43" id="EPs-CH-qJi"/>
+                            <constraint firstItem="ved-yU-1R4" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="Jzq-qE-1rO"/>
                             <constraint firstItem="b9d-2M-tQ6" firstAttribute="top" secondItem="d6j-ij-Cuc" secondAttribute="bottom" constant="117" id="SVQ-Nx-beL"/>
                             <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="qIy-s0-o95" secondAttribute="leadingMargin" constant="51" id="Sda-18-g5B"/>
                             <constraint firstItem="h9U-KT-3Uu" firstAttribute="top" secondItem="b9d-2M-tQ6" secondAttribute="bottom" constant="106" id="VAx-nH-Zen"/>
@@ -78,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="image" destination="y9Q-8V-oHl" id="vcI-4V-vz4"/>
+                        <outlet property="indicadorAtv" destination="ved-yU-1R4" id="1pv-UR-BbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4h6-gg-ebM" sceneMemberID="firstResponder"/>
