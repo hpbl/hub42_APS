@@ -1,5 +1,5 @@
 //
-//  FabricaRepositorios.swift
+//  FabricaRepositoriosConcreto.swift
 //  hubAPS
 //
 //  Created by Ian Manor on 9/27/16.
@@ -8,15 +8,7 @@
 
 import Foundation
 
-protocol FabricaRepositorios {
-    
-    func criarRepositorioContas() -> IRepositorioContas
-    func criarRepositorioItens() -> IRepositorioItens
-    func criarRepositorioTrocas() -> IRepositorioTrocas
-    
-}
-
-extension FabricaRepositorios {
+public class FabricaRepositoriosCloudKit : FabricaRepositoriosAbstrata {
     
     func criarRepositorioContas() -> IRepositorioContas {
         return RepositorioContasCloudKit()

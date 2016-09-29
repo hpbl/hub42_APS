@@ -12,8 +12,6 @@
 		2B0318171D9B6535002B8753 /* RepositorioContasCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0318161D9B6535002B8753 /* RepositorioContasCloudKit.swift */; };
 		2B0318191D9B6553002B8753 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0318181D9B6553002B8753 /* Conta.swift */; };
 		2B03181B1D9B6559002B8753 /* ControladorLoginFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03181A1D9B6559002B8753 /* ControladorLoginFB.swift */; };
-		2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149531D9B0B3C00D1C136 /* Fachada.swift */; };
-		2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */; };
 		2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81495F1D9B396700D1C136 /* CadastroItens.swift */; };
 		2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149611D9B397200D1C136 /* CadastroContas.swift */; };
 		2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */; };
@@ -38,17 +36,17 @@
 		DAB50FC81D9B4DD50047C061 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC51D9B4DD50047C061 /* FBSDKLoginKit.framework */; };
 		DAB50FC91D9B4DD50047C061 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC61D9B4DD50047C061 /* FBSDKShareKit.framework */; };
 		DAB73F761D9CAE0C00665036 /* ComunicacaoFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB73F751D9CAE0C00665036 /* ComunicacaoFacebook.swift */; };
+		DAB73F781D9D764900665036 /* FabricaRepositoriosAbstrata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB73F771D9D764900665036 /* FabricaRepositoriosAbstrata.swift */; };
+		DAB73F7A1D9D767100665036 /* FabricaRepositoriosCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB73F791D9D767100665036 /* FabricaRepositoriosCloudKit.swift */; };
+		DAB73F7C1D9D76D600665036 /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB73F7B1D9D76D600665036 /* Fachada.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B0318081D9B63A2002B8753 /* FabricaRepositoriosCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FabricaRepositoriosCloudKit.swift; path = ../../../../../Downloads/FabricaRepositoriosCloudKit.swift; sourceTree = "<group>"; };
 		2B0318121D9B6518002B8753 /* RepositorioItensCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioItensCloudKit.swift; sourceTree = "<group>"; };
 		2B0318141D9B6522002B8753 /* RepositorioTrocasCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioTrocasCloudKit.swift; sourceTree = "<group>"; };
 		2B0318161D9B6535002B8753 /* RepositorioContasCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorioContasCloudKit.swift; sourceTree = "<group>"; };
 		2B0318181D9B6553002B8753 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		2B03181A1D9B6559002B8753 /* ControladorLoginFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorLoginFB.swift; sourceTree = "<group>"; };
-		2B8149531D9B0B3C00D1C136 /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
-		2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositorios.swift; sourceTree = "<group>"; };
 		2B81495F1D9B396700D1C136 /* CadastroItens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroItens.swift; sourceTree = "<group>"; };
 		2B8149611D9B397200D1C136 /* CadastroContas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroContas.swift; sourceTree = "<group>"; };
 		2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroTrocas.swift; sourceTree = "<group>"; };
@@ -77,6 +75,9 @@
 		DAB50FC51D9B4DD50047C061 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = hubAPS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		DAB50FC61D9B4DD50047C061 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = hubAPS/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DAB73F751D9CAE0C00665036 /* ComunicacaoFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunicacaoFacebook.swift; sourceTree = "<group>"; };
+		DAB73F771D9D764900665036 /* FabricaRepositoriosAbstrata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosAbstrata.swift; sourceTree = "<group>"; };
+		DAB73F791D9D767100665036 /* FabricaRepositoriosCloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricaRepositoriosCloudKit.swift; sourceTree = "<group>"; };
+		DAB73F7B1D9D76D600665036 /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +99,14 @@
 		2B8149521D9B0B2E00D1C136 /* Negocios */ = {
 			isa = PBXGroup;
 			children = (
-				2B0318081D9B63A2002B8753 /* FabricaRepositoriosCloudKit.swift */,
-				2B8149531D9B0B3C00D1C136 /* Fachada.swift */,
-				2B81495B1D9B175B00D1C136 /* FabricaRepositorios.swift */,
 				2B81495F1D9B396700D1C136 /* CadastroItens.swift */,
 				2B03181A1D9B6559002B8753 /* ControladorLoginFB.swift */,
 				2B8149611D9B397200D1C136 /* CadastroContas.swift */,
 				2B8149631D9B397D00D1C136 /* CadastroTrocas.swift */,
 				2B8149661D9B453700D1C136 /* ControladorCadastroItem.swift */,
+				DAB73F771D9D764900665036 /* FabricaRepositoriosAbstrata.swift */,
+				DAB73F791D9D767100665036 /* FabricaRepositoriosCloudKit.swift */,
+				DAB73F7B1D9D76D600665036 /* Fachada.swift */,
 			);
 			name = Negocios;
 			sourceTree = "<group>";
@@ -323,13 +324,14 @@
 				2B8149621D9B397200D1C136 /* CadastroContas.swift in Sources */,
 				2B0318151D9B6522002B8753 /* RepositorioTrocasCloudKit.swift in Sources */,
 				2B0318131D9B6518002B8753 /* RepositorioItensCloudKit.swift in Sources */,
+				DAB73F781D9D764900665036 /* FabricaRepositoriosAbstrata.swift in Sources */,
 				DAB73F761D9CAE0C00665036 /* ComunicacaoFacebook.swift in Sources */,
 				712C9B531D9B0830004468B2 /* Troca.swift in Sources */,
+				DAB73F7C1D9D76D600665036 /* Fachada.swift in Sources */,
 				712C9B391D9AFCCF004468B2 /* AppDelegate.swift in Sources */,
-				2B81495C1D9B175B00D1C136 /* FabricaRepositorios.swift in Sources */,
-				2B8149541D9B0B3C00D1C136 /* Fachada.swift in Sources */,
 				2B8149671D9B453700D1C136 /* ControladorCadastroItem.swift in Sources */,
 				2B0318191D9B6553002B8753 /* Conta.swift in Sources */,
+				DAB73F7A1D9D767100665036 /* FabricaRepositoriosCloudKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

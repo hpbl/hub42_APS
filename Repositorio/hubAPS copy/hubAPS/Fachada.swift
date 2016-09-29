@@ -11,13 +11,34 @@ import UIKit
 
 class Fachada {
     
+    var controladorLoginFB : ControladorLoginFB
+    var controladorCadastroItem : ControladorCadastroItem
+    
     private init() {
+        var fabricaRepositorios : FabricaRepositoriosAbstrata? = nil
         
+        if let path = Bundle.main.path(forResource: "configurations", ofType: "plist") {
+            if let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+                switch dict["repositoryType"] {
+                case "CloudKit" as String:
+                    fabricaRepositorios = FabricaRepositoriosCloudKit()
+                default:
+                    break
+                }
+            }
+        }
+        
+        let repositorioContas = fabricaRepositorios!.criarRepositorioContas()
+        let repositorioItens = fabricaRepositorios!.criarRepositorioItens()
+        //let repositorioTrocas = fabricaRepositorios!.criarRepositorioTrocas()
+        
+        controladorLoginFB = ControladorLoginFB(repositorioContas: repositorioContas)
+        controladorCadastroItem = ControladorCadastroItem(repositorio: repositorioItens)
     }
     
     /*Singleton pattern implementation*/
     private static var _instance: Fachada?
-    static var getInstance: Fachada {
+    static var instance: Fachada {
         get {
             if self._instance == nil {
                 self._instance = Fachada()
