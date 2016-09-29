@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJk-J2-tIq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjR-gb-7fR">
@@ -46,49 +46,63 @@
                         <viewControllerLayoutGuide type="bottom" id="h9U-KT-3Uu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qIy-s0-o95">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-ij-Cuc">
-                                <state key="normal" title="Add item"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="qK7-Ni-VLK"/>
+                                </constraints>
+                                <state key="normal" title="Add Foto"/>
                                 <connections>
                                     <action selector="pressAddBtn:" destination="zJk-J2-tIq" eventType="touchUpInside" id="fib-bu-Yr5"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="O6c-QT-whN"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXZ-X9-Vht">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-2M-tQ6">
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="pressSaveBtn:" destination="zJk-J2-tIq" eventType="touchUpInside" id="VbM-f5-rsR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl"/>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
                                 <color key="color" red="0.057012024575167776" green="0.022519924496644295" blue="0.90070290907046979" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="y9Q-8V-oHl" secondAttribute="trailing" constant="52" id="2ih-rK-7Dc"/>
-                            <constraint firstItem="ved-yU-1R4" firstAttribute="centerY" secondItem="qIy-s0-o95" secondAttribute="centerY" id="8qb-2g-78F"/>
-                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="43" id="EPs-CH-qJi"/>
-                            <constraint firstItem="ved-yU-1R4" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="Jzq-qE-1rO"/>
-                            <constraint firstItem="b9d-2M-tQ6" firstAttribute="top" secondItem="d6j-ij-Cuc" secondAttribute="bottom" constant="117" id="SVQ-Nx-beL"/>
-                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="qIy-s0-o95" secondAttribute="leadingMargin" constant="51" id="Sda-18-g5B"/>
-                            <constraint firstItem="h9U-KT-3Uu" firstAttribute="top" secondItem="b9d-2M-tQ6" secondAttribute="bottom" constant="106" id="VAx-nH-Zen"/>
-                            <constraint firstItem="d6j-ij-Cuc" firstAttribute="top" secondItem="y9Q-8V-oHl" secondAttribute="bottom" constant="108" id="Yq0-8i-TMw"/>
-                            <constraint firstItem="b9d-2M-tQ6" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="511" id="lSN-AZ-FJE"/>
-                            <constraint firstItem="b9d-2M-tQ6" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="p2z-fJ-hb6"/>
-                            <constraint firstItem="d6j-ij-Cuc" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="rlR-Nj-itV"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="trailing" secondItem="d6j-ij-Cuc" secondAttribute="trailing" constant="1" id="298-U0-9mZ"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="qIy-s0-o95" secondAttribute="leadingMargin" constant="24" id="4hH-XV-DbZ"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="AXZ-X9-Vht" secondAttribute="leading" id="C3u-xK-QLm"/>
+                            <constraint firstItem="d6j-ij-Cuc" firstAttribute="top" secondItem="y9Q-8V-oHl" secondAttribute="bottom" constant="11" id="HYy-hU-EV1"/>
+                            <constraint firstItem="ved-yU-1R4" firstAttribute="top" secondItem="y9Q-8V-oHl" secondAttribute="bottom" constant="11" id="Ja8-jL-OKh"/>
+                            <constraint firstItem="d6j-ij-Cuc" firstAttribute="leading" secondItem="AXZ-X9-Vht" secondAttribute="trailing" constant="20" id="W56-eL-G2T"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="centerX" secondItem="qIy-s0-o95" secondAttribute="centerX" id="aEb-1h-LYA"/>
+                            <constraint firstItem="d6j-ij-Cuc" firstAttribute="top" secondItem="AXZ-X9-Vht" secondAttribute="top" id="asM-8I-lzH"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="centerX" secondItem="ved-yU-1R4" secondAttribute="centerX" id="efJ-xv-dZU"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="centerX" secondItem="b9d-2M-tQ6" secondAttribute="centerX" constant="1" id="ggV-On-RIA"/>
+                            <constraint firstItem="b9d-2M-tQ6" firstAttribute="top" secondItem="AXZ-X9-Vht" secondAttribute="bottom" constant="21" id="rgp-X1-D9M"/>
+                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="30" id="tK2-ha-VsK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="image" destination="y9Q-8V-oHl" id="vcI-4V-vz4"/>
                         <outlet property="indicadorAtv" destination="ved-yU-1R4" id="1pv-UR-BbH"/>
+                        <outlet property="textField" destination="AXZ-X9-Vht" id="GFv-R4-WeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4h6-gg-ebM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="107"/>
+            <point key="canvasLocation" x="676.875" y="105.63380281690141"/>
         </scene>
     </scenes>
 </document>
