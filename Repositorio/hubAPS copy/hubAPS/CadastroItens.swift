@@ -17,11 +17,11 @@ class CadastroItens {
     
     var repositorio : IRepositorioItens
     
-    func inserirItem(item:Item) {
-        repositorio.inserirItem(item: item)
+    func inserirItem(item: Item, callback: @escaping (Error?) -> ()) {
+        repositorio.inserirItem(item: item, callback: callback)
     }
     
-    func solicitarItensPerto(localizacao:CLLocation) -> NSArray {
-        return repositorio.solicitarItensPerto(localizacao: localizacao)
+    func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ()) {
+        return repositorio.solicitarItensPerto(localizacao: localizacao, callback: callback)
     }
 }

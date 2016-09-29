@@ -17,7 +17,7 @@ class ControladorCadastroItem {
         self.cadastroItens = CadastroItens(repositorio: repositorio)
     }
     
-    func solicitarItensPerto(localizacao:CLLocation) -> NSArray {
-        return self.cadastroItens.solicitarItensPerto(localizacao: localizacao)
+    func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ()) {
+        return self.cadastroItens.solicitarItensPerto(localizacao: localizacao, callback: callback)
     }
 }

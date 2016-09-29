@@ -11,6 +11,6 @@ import CoreLocation
 
 protocol IRepositorioItens {
     
-    func inserirItem(item: Item)
-    func solicitarItensPerto(localizacao: CLLocation) -> NSArray
+    func inserirItem(item: Item, callback: @escaping (Error?) -> ())
+    func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ())
 }

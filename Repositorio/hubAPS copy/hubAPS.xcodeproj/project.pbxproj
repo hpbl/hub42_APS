@@ -30,6 +30,8 @@
 		712C9B5A1D9B1928004468B2 /* IRepositorioItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B591D9B1928004468B2 /* IRepositorioItens.swift */; };
 		712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */; };
 		712C9B681D9C2A0A004468B2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712C9B671D9C2A0A004468B2 /* CloudKit.framework */; };
+		712C9B6A1D9D4DA3004468B2 /* iago 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 712C9B691D9D4DA3004468B2 /* iago 2.png */; };
+		712C9B6F1D9D5BAE004468B2 /* Extensoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C9B6E1D9D5BAE004468B2 /* Extensoes.swift */; };
 		DA4457451D9C58FF00388A16 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4457441D9C58FF00388A16 /* Bolts.framework */; };
 		DAB50FC21D9B47310047C061 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB50FC11D9B47310047C061 /* AddItemViewController.swift */; };
 		DAB50FC71D9B4DD50047C061 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB50FC41D9B4DD50047C061 /* FBSDKCoreKit.framework */; };
@@ -66,6 +68,8 @@
 		712C9B5B1D9B19F2004468B2 /* IRepositorioTrocas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRepositorioTrocas.swift; sourceTree = "<group>"; };
 		712C9B651D9C29DD004468B2 /* hubAPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hubAPS.entitlements; sourceTree = "<group>"; };
 		712C9B671D9C2A0A004468B2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		712C9B691D9D4DA3004468B2 /* iago 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iago 2.png"; sourceTree = "<group>"; };
+		712C9B6E1D9D5BAE004468B2 /* Extensoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensoes.swift; sourceTree = "<group>"; };
 		DA4457441D9C58FF00388A16 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DA4457881D9C596B00388A16 /* hubAPS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hubAPS-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAB50FC11D9B47310047C061 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 		712C9B371D9AFCCF004468B2 /* hubAPS */ = {
 			isa = PBXGroup;
 			children = (
+				712C9B701D9D5BB6004468B2 /* Extensoes */,
 				DAB73F741D9CADC200665036 /* Facebook */,
 				712C9B651D9C29DD004468B2 /* hubAPS.entitlements */,
 				2B81495A1D9B158700D1C136 /* Item */,
@@ -184,6 +189,7 @@
 				2B8149521D9B0B2E00D1C136 /* Negocios */,
 				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
 				712C9B421D9AFCCF004468B2 /* Assets.xcassets */,
+				712C9B691D9D4DA3004468B2 /* iago 2.png */,
 				712C9B471D9AFCCF004468B2 /* Info.plist */,
 				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
 				DA4457881D9C596B00388A16 /* hubAPS-Bridging-Header.h */,
@@ -201,6 +207,14 @@
 				712C9B671D9C2A0A004468B2 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		712C9B701D9D5BB6004468B2 /* Extensoes */ = {
+			isa = PBXGroup;
+			children = (
+				712C9B6E1D9D5BAE004468B2 /* Extensoes.swift */,
+			);
+			name = Extensoes;
 			sourceTree = "<group>";
 		};
 		DAB73F741D9CADC200665036 /* Facebook */ = {
@@ -283,6 +297,7 @@
 				712C9B461D9AFCCF004468B2 /* LaunchScreen.storyboard in Resources */,
 				712C9B431D9AFCCF004468B2 /* Assets.xcassets in Resources */,
 				712C9B3E1D9AFCCF004468B2 /* Main.storyboard in Resources */,
+				712C9B6A1D9D4DA3004468B2 /* iago 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +316,7 @@
 				712C9B581D9B16AF004468B2 /* IRepositorioContas.swift in Sources */,
 				DAB50FC21D9B47310047C061 /* AddItemViewController.swift in Sources */,
 				2B03181B1D9B6559002B8753 /* ControladorLoginFB.swift in Sources */,
+				712C9B6F1D9D5BAE004468B2 /* Extensoes.swift in Sources */,
 				712C9B5C1D9B19F2004468B2 /* IRepositorioTrocas.swift in Sources */,
 				2B8149641D9B397D00D1C136 /* CadastroTrocas.swift in Sources */,
 				2B8149601D9B396700D1C136 /* CadastroItens.swift in Sources */,

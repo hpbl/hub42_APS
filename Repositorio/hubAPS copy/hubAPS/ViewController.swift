@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import CoreLocation
 
 class ViewController: UIViewController{
 
