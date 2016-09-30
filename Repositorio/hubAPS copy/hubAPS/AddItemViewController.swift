@@ -11,15 +11,16 @@ import UIKit
 class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
     
     //MARK: - Outlets e Variaveis
-    let picker = UIImagePickerController()
+    let fachada = Fachada.instance
     
+    let picker = UIImagePickerController()
     @IBOutlet weak var image: UIImageView!
-
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
         indicadorAtv.startAnimating()
         //TODO: chmar func de inserir item
+        //fachada.cadastrarItem(foto: image.image, nome: textField.text, conta: )//Como pegar a conta
         
         //TODO: indicadorAtv.stopAnimating() dentro do callback
     }

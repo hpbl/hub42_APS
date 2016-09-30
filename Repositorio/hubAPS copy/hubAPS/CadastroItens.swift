@@ -21,7 +21,7 @@ class CadastroItens {
         repositorio.inserirItem(item: item, callback: callback)
     }
     
-    func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ()) {
+    /*func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ()) {
         return repositorio.solicitarItensPerto(localizacao: localizacao, callback: callback)
-    }
+    }*/
 }
