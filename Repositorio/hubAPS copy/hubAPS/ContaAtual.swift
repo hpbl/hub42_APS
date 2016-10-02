@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ContaAtual {
+class ContaAtual{
     
     init(id: String) {
         self.idConta = id

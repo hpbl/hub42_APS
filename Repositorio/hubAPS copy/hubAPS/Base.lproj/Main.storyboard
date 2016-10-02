@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +25,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-08-12 at 15.05.06" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-wu-Bau">
-                                <frame key="frameInset" minX="48" minY="69" width="278" height="177"/>
+                                <frame key="frameInset" minX="21" minY="50" width="278" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -58,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-ij-Cuc">
-                                <frame key="frameInset" minX="272" minY="468" width="63" height="30"/>
+                                <frame key="frameInset" minX="216" minY="443" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Add Foto">
@@ -68,17 +66,19 @@
                                     <action selector="pressAddBtn:" destination="zJk-J2-tIq" eventType="touchUpInside" id="fib-bu-Yr5"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl">
-                                <frame key="frameInset" minX="40" minY="75" width="295" height="365"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-8V-oHl">
+                                <frame key="frameInset" minX="40" minY="75" width="239" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXZ-X9-Vht">
-                                <frame key="frameInset" minX="40" minY="465" width="211" height="37"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXZ-X9-Vht">
+                                <frame key="frameInset" minX="40" minY="440" width="166" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-2M-tQ6">
-                                <frame key="frameInset" minX="169" minY="548" width="37" height="30"/>
+                                <frame key="frameInset" minX="142" minY="507" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save">
@@ -89,24 +89,16 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
-                                <frame key="frameInset" minX="169" minY="226" width="37" height="37"/>
+                                <frame key="frameInset" minX="141" minY="226" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.057012024575167776" green="0.022519924496644295" blue="0.90070290907046979" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-Lh-qtp">
-                                <frame key="frameInset" minX="155" minY="6" width="64" height="67"/>
+                                <frame key="frameInset" minX="135" width="64" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568629" green="0.082352941176470587" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="top" secondItem="Y3D-op-vuj" secondAttribute="bottom" constant="30" id="INf-Yc-Unr"/>
-                            <constraint firstItem="y9Q-8V-oHl" firstAttribute="leading" secondItem="qIy-s0-o95" secondAttribute="leadingMargin" constant="24" id="JJh-EV-SRa"/>
-                            <constraint firstItem="h9U-KT-3Uu" firstAttribute="top" secondItem="y9Q-8V-oHl" secondAttribute="bottom" multiplier="1.5" constant="8" symbolic="YES" id="KWS-LX-JJU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="y9Q-8V-oHl" secondAttribute="trailing" constant="24" id="RXv-Kk-MeO"/>
-                            <constraint firstItem="h9U-KT-3Uu" firstAttribute="top" secondItem="AXZ-X9-Vht" secondAttribute="bottom" constant="190" id="Vge-0x-PS8"/>
-                            <constraint firstItem="AXZ-X9-Vht" firstAttribute="top" secondItem="y9Q-8V-oHl" secondAttribute="bottom" id="rZc-D5-bIG"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="image" destination="y9Q-8V-oHl" id="vcI-4V-vz4"/>
@@ -116,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4h6-gg-ebM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="104.7976011994003"/>
+            <point key="canvasLocation" x="675" y="104.5774647887324"/>
         </scene>
     </scenes>
     <resources>
