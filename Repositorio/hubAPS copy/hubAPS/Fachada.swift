@@ -51,8 +51,15 @@ class Fachada {
         }
     }
     
-    func efetuarLoginFB(view : UIView) {
-        controladorLoginFB.efetuarLoginFB(view: view)
+    func efetuarLoginFB(view : UIView, callback: @escaping (Error?) -> ()) {
+        controladorLoginFB.efetuarLoginFB(view: view) {
+            erro, id in
+            if (erro == nil) {
+                self.contaAtual?.idConta = id
+            }
+            callback(erro)
+            
+        }
     }
     
 

@@ -19,7 +19,7 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
         self.viewPrincipal = viewPrincipal
     }
     
-    func loginFacebook(callbackCadastro: @escaping ()->()){
+    func loginFacebook(callbackCadastro: @escaping () -> ()){
         
         let loginView : FBSDKLoginButton = FBSDKLoginButton()
         self.viewPrincipal?.addSubview(loginView)

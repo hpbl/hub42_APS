@@ -20,7 +20,7 @@ class RepositorioContasCloudKit : IRepositorioContas{
         publicDB = container.publicCloudDatabase
     }
     
-    func inserirConta(conta: Conta, callback: @escaping (Error?) -> ()) {
+    func inserirConta(conta: Conta, callback: @escaping (Error?, String) -> ()) {
         
         let contaRecord = CKRecord(recordType:"Conta")
         contaRecord.setObject(conta.email as CKRecordValue?, forKey: "email")
@@ -31,7 +31,7 @@ class RepositorioContasCloudKit : IRepositorioContas{
 
         publicDB.save(contaRecord) { (record, error) in
             if ((error) == nil) {
-                callback(error)
+                callback(error, conta.id)
             }
         }
     }
@@ -64,6 +64,20 @@ class RepositorioContasCloudKit : IRepositorioContas{
                 callback(true, error)
             } else {
                 callback(false, error)
+            }
+        }
+    }
+    
+    func verificarEmailFB(email: String, callback: @escaping (Error?, String?) -> ()) {
+        let predicate : NSPredicate = NSPredicate(format: "email == %@", email)
+        let query = CKQuery(recordType: "Conta", predicate: predicate);
+        
+        publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if ((records?.count)! > 0) {
+                let id = records?[0].object(forKey: "id") as? String
+                callback(error, id)
+            } else {
+                callback(error, nil)
             }
         }
     }

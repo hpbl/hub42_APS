@@ -20,7 +20,11 @@ class CadastroContas {
         self.repositorio.verificarEmail(email: email, callback: callback)
     }
     
-    func inserirConta(conta: Conta, callback: @escaping (Error?) -> ()){
+    func verificarEmailFB(email: String, callback: @escaping (Error?, String?) -> ()){
+        self.repositorio.verificarEmailFB(email: email, callback: callback)
+    }
+    
+    func inserirConta(conta: Conta, callback: @escaping (Error?, String) -> ()){
         self.repositorio.inserirConta(conta: conta, callback:callback)
     }
     

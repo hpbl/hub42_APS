@@ -10,11 +10,13 @@ import Foundation
 
 protocol IRepositorioContas {
     
-    func inserirConta(conta: Conta, callback: @escaping (Error?) -> ())
+    func inserirConta(conta: Conta, callback: @escaping (Error?, String) -> ())
     
     func getConta(idConta: String, callback: @escaping (Conta?, Error?) -> ())
     
     func verificarEmail(email: String, callback: @escaping (Bool?, Error?) -> ())
+    
+    func verificarEmailFB(email: String, callback: @escaping (Error?, String?) -> ())
     
     func atualizarConta(conta: Conta, callback: @escaping (Error?) -> ())
     
