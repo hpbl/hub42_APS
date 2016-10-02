@@ -13,16 +13,16 @@ import CoreLocation
 
 class ViewController: UIViewController{
 
-   // let fachada = Fachada.instance
-    let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
-    var facebook : ComunicacaoFacebook?
+    let fachada = Fachada.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.facebook = ComunicacaoFacebook(viewPrincipal: view)
-        self.facebook?.loginFacebook()//Metodo que chama facebook
+        self.efetuarLoginFB{
+        
+        }
+        
     
     }
 
@@ -37,8 +37,8 @@ class ViewController: UIViewController{
     }
     
     
-    func efetuarLoginFB(){
-   
+    func efetuarLoginFB(callback:){
+        fachada.efetuarLoginFB(view: view, callback:)
     }
     
 }

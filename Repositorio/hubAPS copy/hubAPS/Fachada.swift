@@ -47,8 +47,8 @@ class Fachada {
         }
     }
     
-    func efetuarLoginFB() {
-        
+    func efetuarLoginFB(view : UIView, callback: callback) {
+        controladorLoginFB.efetuarLoginFB(view: view)
     }
     
     func cadastrarItem(foto:UIImage, nome:String, conta:Conta) {

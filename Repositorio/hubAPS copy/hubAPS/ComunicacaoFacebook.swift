@@ -11,14 +11,15 @@ import Foundation
 class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
    
     var viewPrincipal : UIView?
+    var emailUsuario : String?
+    var callbackCadastro: (()->())?
     
     init (viewPrincipal: UIView){
     
-        
         self.viewPrincipal = viewPrincipal
     }
     
-    func loginFacebook(){
+    func loginFacebook(callback: @escaping ()->()){
         
         let loginView : FBSDKLoginButton = FBSDKLoginButton()
         //self.viewPrincipal.addSubview(loginView)
@@ -27,7 +28,7 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
         loginView.center = (self.viewPrincipal?.center)!
         loginView.readPermissions = ["public_profile", "email", "user_friends"]
         loginView.delegate = self
-        
+        self.callbackCadastro = callback
     }
     
     
@@ -69,6 +70,7 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
             {
                 // Process error
                 print("Error: \(error)")
+                
             }
             else
             {
@@ -78,12 +80,20 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
                     //let lastName  = dataDict["last_name"] as? String
                     
                     print(email)
+                    self.emailUsuario = email
+                    self.callbackCadastro!()
                     
                     //Quardar email e chamar as açoes de cadastro
                     /*ADICIONAR CODIGO AQUI*/
                 }
             }
         })
+    }
+    
+    
+    func pegarEmail() -> String{
+        
+        return self.emailUsuario!
     }
     
 }
