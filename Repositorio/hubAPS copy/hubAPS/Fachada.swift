@@ -55,7 +55,7 @@ class Fachada {
         controladorLoginFB.efetuarLoginFB(view: view) {
             erro, id in
             if (erro == nil) {
-                self.contaAtual? = ContaAtual(id: id)
+                self.contaAtual = ContaAtual(idConta: id)
             }
             callback(erro)
             
