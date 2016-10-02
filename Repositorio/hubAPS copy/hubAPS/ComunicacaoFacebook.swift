@@ -8,14 +8,23 @@
 
 import Foundation
 
-extension ViewController: FBSDKLoginButtonDelegate{
+class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
    
+    var viewPrincipal : UIView?
+    
+    init (viewPrincipal: UIView){
+    
+        
+        self.viewPrincipal = viewPrincipal
+    }
     
     func loginFacebook(){
         
         let loginView : FBSDKLoginButton = FBSDKLoginButton()
-        self.view.addSubview(loginView)
-        loginView.center = self.view.center
+        //self.viewPrincipal.addSubview(loginView)
+        self.viewPrincipal?.addSubview(loginView)
+        //loginView.center = self.viewPrincipal.center
+        loginView.center = (self.viewPrincipal?.center)!
         loginView.readPermissions = ["public_profile", "email", "user_friends"]
         loginView.delegate = self
         
