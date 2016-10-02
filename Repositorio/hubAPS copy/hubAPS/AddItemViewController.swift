@@ -18,11 +18,12 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
-        indicadorAtv.startAnimating()
+        //indicadorAtv.startAnimating()
         //TODO: chmar func de inserir item
         //fachada.cadastrarItem(foto: image.image, nome: textField.text, conta: )//Como pegar a conta
         
         //TODO: indicadorAtv.stopAnimating() dentro do callback
+        
     }
     
     

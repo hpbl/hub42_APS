@@ -33,38 +33,6 @@
             endingLineNumber = "75"
             landmarkName = "inserirItem(idItem:conta:callback:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "hubAPS.RepositorioContasCloudKit.inserirItem (idItem : Swift.String, conta : hubAPS.Conta, callback : (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "hubAPS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/RepositorioContasCloudKit.swift"
-                  timestampString = "496855158.195364"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "hubAPS.RepositorioContasCloudKit.(inserirItem (idItem : Swift.String, conta : hubAPS.Conta, callback : (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "hubAPS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/RepositorioContasCloudKit.swift"
-                  timestampString = "496855158.19685"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,12 +138,12 @@
                   moduleName = "hubAPS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/RepositorioContasCloudKit.swift"
-                  timestampString = "496855158.202902"
+                  timestampString = "497122031.650121"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
                   endingLineNumber = "62"
-                  offsetFromSymbolStart = "360">
+                  offsetFromSymbolStart = "435">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -185,12 +153,12 @@
                   moduleName = "hubAPS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/RepositorioContasCloudKit.swift"
-                  timestampString = "496855158.204276"
+                  timestampString = "497122031.65255"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "63"
                   endingLineNumber = "63"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "27">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -298,12 +266,101 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "hubAPS/AddItemViewController.swift"
-            timestampString = "496856891.41065"
+            timestampString = "497121589.979068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AddItemViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hubAPS.AddItemViewController.fachada.getter : hubAPS.Fachada"
+                  moduleName = "hubAPS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/AddItemViewController.swift"
+                  timestampString = "497122031.67518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hubAPS.AddItemViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; hubAPS.AddItemViewController"
+                  moduleName = "hubAPS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/AddItemViewController.swift"
+                  timestampString = "497122031.677635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hubAPS.AddItemViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;hubAPS.AddItemViewController&gt;"
+                  moduleName = "hubAPS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pintor/Documents/CIn/APS/hubAPS/hub42_APS/Repositorio/hubAPS%20copy/hubAPS/AddItemViewController.swift"
+                  timestampString = "497122031.680323"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "hubAPS/Fachada.swift"
+            timestampString = "497121741.415907"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "hubAPS/Fachada.swift"
+            timestampString = "497121759.640363"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
