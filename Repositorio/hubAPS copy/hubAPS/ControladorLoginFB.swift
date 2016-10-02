@@ -18,17 +18,15 @@ class ControladorLoginFB {
         self.cadastroContas = CadastroContas(repositorio: repositorioContas)
     }
     
-    func efetuarLoginFB(view : UIView) {
+    func efetuarLoginFB(view : UIView){
         //let conta = Conta(id: Int, email: String, itens: Array<Int>, localizacao: CLLocation)
         //self.cadastroContas.inserirConta(conta: conta)
         self.facebook = ComunicacaoFacebook(viewPrincipal: view)
-        self.facebook?.loginFacebook(callback: cadastrarConta)//Metodo que chama facebook
+        self.facebook?.loginFacebook(callbackCadastro: cadastrarConta)//Metodo que chama facebook
+        
     }
     
     func cadastrarConta(){
         print((self.facebook?.emailUsuario)!)
-        
-        let newConta = Conta(email: ((self.facebook?.emailUsuario)!) , itens: [], localizacao: CLLocation())
-        self.cadastroContas.inserirConta(conta: newConta, callback: <#T##(Error?) -> ()#>)
     }
 }

@@ -44,13 +44,13 @@ class RepositorioContasCloudKit : IRepositorioContas{
             if ((records?.count)! > 0) {
                 
                 let id = records?[0].object(forKey: "id") as! String
-                let email = records?[0].object(forKey: "email") as! String
-                let senha = records?[0].object(forKey: "senha") as! String
+                let email = records?[0].object(forKey: "email") as? String
+                let senha = records?[0].object(forKey: "senha") as? String
                 let itens = records?[0].object(forKey: "itens") as? [String]
-                let localizacao = records?[0].object(forKey: "localizacao") as! CLLocation
+                let localizacao = records?[0].object(forKey: "localizacao") as? CLLocation
 
                 
-                callback(Conta(id: id, email: email, senha: senha , itens: itens, localizacao: localizacao), error)
+                callback(Conta(id: id, email: email, senha: senha, itens: itens, localizacao: localizacao), error)
             }
         }
     }
@@ -68,24 +68,15 @@ class RepositorioContasCloudKit : IRepositorioContas{
         }
     }
     
-    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ()){
-        let predicate : NSPredicate = NSPredicate(format: "id == %@", conta.id)
-        let query = CKQuery(recordType: "Conta", predicate: predicate);
-        
-        publicDB.perform(query, inZoneWith: nil) { (records, error) in
-            if ((records?.count)! > 0) {
+    func inserirItem(idItem: String, idConta: String, callback: @escaping (Error?) -> ()){
 
-                var itens = records?[0].object(forKey: "itens") as? [String]
+        self.getConta(idConta: idConta) { (conta, erroGet) in
+            
+            if (conta != nil) {
+                conta?.inserirItem(idItem: idItem)
                 
-                if (itens == nil) {
-                    itens = []
-                }
-                itens?.append(idItem)
-                
-                records?[0].setObject(itens as CKRecordValue?, forKey: "itens")
-                
-                self.publicDB.save((records?[0])!, completionHandler: { (record, error) in
-                    callback(error)
+                self.atualizarConta(conta: conta!, callback: { (erroAtualizar) in
+                    callback(erroAtualizar)
                 })
             }
         }
@@ -104,7 +95,9 @@ class RepositorioContasCloudKit : IRepositorioContas{
                 records?[0].setObject(conta.senha as CKRecordValue?, forKey: "senha")
                 
                 self.publicDB.save((records?[0])!, completionHandler: { (record, error) in
-                    callback(error)
+                    DispatchQueue.main.async {
+                        callback(error)
+                    }
                 })
             }
         }

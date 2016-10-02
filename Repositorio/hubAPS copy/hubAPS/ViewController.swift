@@ -19,9 +19,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.efetuarLoginFB{
-        
-        }
+        self.efetuarLoginFB()
         
     
     }
@@ -37,8 +35,8 @@ class ViewController: UIViewController{
     }
     
     
-    func efetuarLoginFB(callback:){
-        fachada.efetuarLoginFB(view: view, callback:)
+    func efetuarLoginFB(){
+        fachada.efetuarLoginFB(view: view)
     }
     
 }

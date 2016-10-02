@@ -19,16 +19,14 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
         self.viewPrincipal = viewPrincipal
     }
     
-    func loginFacebook(callback: @escaping ()->()){
+    func loginFacebook(callbackCadastro: @escaping ()->()){
         
         let loginView : FBSDKLoginButton = FBSDKLoginButton()
-        //self.viewPrincipal.addSubview(loginView)
         self.viewPrincipal?.addSubview(loginView)
-        //loginView.center = self.viewPrincipal.center
         loginView.center = (self.viewPrincipal?.center)!
         loginView.readPermissions = ["public_profile", "email", "user_friends"]
         loginView.delegate = self
-        self.callbackCadastro = callback
+        self.callbackCadastro = callbackCadastro
     }
     
     
@@ -85,6 +83,8 @@ class ComunicacaoFacebook : NSObject, FBSDKLoginButtonDelegate{
                     
                     //Quardar email e chamar as açoes de cadastro
                     /*ADICIONAR CODIGO AQUI*/
+                    
+                    
                 }
             }
         })

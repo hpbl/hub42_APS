@@ -18,7 +18,7 @@ protocol IRepositorioContas {
     
     func atualizarConta(conta: Conta, callback: @escaping (Error?) -> ())
     
-    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ())
+    func inserirItem(idItem: String, idConta: String, callback: @escaping (Error?) -> ())
     
     func encontrarDonoItem(idItem: String, callback: (Conta?, Error?) -> ())
 }

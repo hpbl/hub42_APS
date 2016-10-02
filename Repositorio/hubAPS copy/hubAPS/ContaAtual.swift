@@ -8,9 +8,13 @@
 
 import Foundation
 
-class UserInfo {
+class ContaAtual {
     
-    var idUsuario: String? {
+    init(id: String) {
+        self.idConta = id
+    }
+    
+    var idConta: String? {
         get {
             let returnValue = UserDefaults.standard.string(forKey: "idUsuario")
                 return returnValue
@@ -22,4 +26,5 @@ class UserInfo {
             UserDefaults.standard.synchronize()
         }
     }
+    
 }
