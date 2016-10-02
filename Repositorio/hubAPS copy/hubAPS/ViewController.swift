@@ -31,9 +31,10 @@ class ViewController: UIViewController{
         fachada.efetuarLoginFB(view: view) {
             error in
             if (error != nil) {
+                //TODO: handle error
                 print("deu erro")
             } else {
-                print("DEU CERTOOOO")
+                self.performSegue(withIdentifier: "doViewControllerParaAdd", sender: self)
             }
         }
     }
