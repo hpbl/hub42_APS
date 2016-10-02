@@ -8,10 +8,10 @@
 
 import Foundation
 
-class ContaAtual{
+class ContaAtual {
     
-    init(id: String) {
-        self.idConta = id
+    init(idConta: String) {
+        self.idConta = idConta
     }
     
     var idConta: String? {
