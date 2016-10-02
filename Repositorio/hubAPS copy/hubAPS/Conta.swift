@@ -12,12 +12,12 @@ import CoreLocation
 class Conta{
     
     var id : String
-    var email : String
-    var senha : String
+    var email : String?
+    var senha : String?
     var itens : [String]?
-    var localizacao : CLLocation
+    var localizacao : CLLocation?
     
-    init(id: String, email: String, senha: String, itens: [String]?, localizacao: CLLocation) {
+    init(id: String, email: String?, senha: String?, itens: [String]?, localizacao: CLLocation?) {
         self.id = id
         self.email = email
         self.senha = senha
@@ -39,6 +39,13 @@ class Conta{
         self.senha = "FacebookNaoTemSenha" //TODO: trocar por outra?
         self.itens = itens
         self.localizacao = localizacao
+    }
+    
+    func inserirItem(idItem: String) {
+        if (self.itens == nil) {
+            self.itens = []
+        }
+        self.itens?.append(idItem)
     }
     
 }

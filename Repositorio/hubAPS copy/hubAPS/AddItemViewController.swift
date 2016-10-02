@@ -18,12 +18,17 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
-        //indicadorAtv.startAnimating()
-        //TODO: chmar func de inserir item
-        //fachada.cadastrarItem(foto: image.image, nome: textField.text, conta: )//Como pegar a conta
+        self.indicadorAtv.startAnimating()
         
-        //TODO: indicadorAtv.stopAnimating() dentro do callback
-        
+        self.cadastrarItem(foto: self.image.image!, nome: self.textField.text!) {
+            (error) in
+            if (error == nil) {
+                self.indicadorAtv.stopAnimating()
+            }
+            else {
+                //TODO: tratar erro
+            }
+        }
     }
     
     
@@ -37,7 +42,9 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 
-    func cadastrarItem(foto: UIImage, nome: String, conta: Conta){
+    func cadastrarItem(foto: UIImage, nome: String, callback: @escaping (Error?) -> ()){
+        self.fachada.cadastrarItem(foto: foto, nome: nome, callback: callback)
+            
         
     }
     

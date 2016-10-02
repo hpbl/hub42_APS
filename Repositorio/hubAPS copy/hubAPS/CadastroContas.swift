@@ -36,7 +36,7 @@ class CadastroContas {
         return self.repositorio.encontrarDonoItem(item: idItem)
     }*/
     
-    func inserirItem(idItem: String, conta: Conta, callback: @escaping (Error?) -> ()){
-        self.repositorio.inserirItem(idItem: idItem, conta: conta, callback: callback)
+    func inserirItem(idItem: String, idConta: String, callback: @escaping (Error?) -> ()){
+        self.repositorio.inserirItem(idItem: idItem, idConta: idConta, callback: callback)
     }
 }

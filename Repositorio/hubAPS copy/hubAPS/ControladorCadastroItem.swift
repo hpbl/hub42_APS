@@ -12,9 +12,11 @@ import CoreLocation
 class ControladorCadastroItem {
     
     var cadastroItens : CadastroItens
+    var cadastroContas : CadastroContas
     
-    init(repositorio:IRepositorioItens) {
-        self.cadastroItens = CadastroItens(repositorio: repositorio)
+    init(repositorioItens:IRepositorioItens, repositorioContas:IRepositorioContas) {
+        self.cadastroItens = CadastroItens(repositorio: repositorioItens)
+        self.cadastroContas = CadastroContas(repositorio: repositorioContas)
     }
     
     /*func solicitarItensPerto(localizacao: CLLocation, callback: @escaping ([Item]) -> ()) {
@@ -22,8 +24,16 @@ class ControladorCadastroItem {
     }*/
     
     
-    func cadastrarItem(foto: UIImage, nome: String, conta: Conta){
+    func cadastrarItem(foto: UIImage, nome: String, idConta: String, callback: @escaping (Error?) -> ()){
         
+        let item = Item(nome: nome, foto: foto)
+        self.cadastroItens.inserirItem(item: item) { (error) in
+            if (error == nil) {
+                self.cadastroContas.inserirItem(idItem: item.id, idConta: idConta, callback: { (error) in
+                        callback(error)
+                })
+            }
+        }
       
        /* cadastroItens.inserirItem(item: Item(nome: nome, foto: foto)) { (<#Error?#>) in
             //Atualizar pagina para mais um item

@@ -13,6 +13,7 @@ class Fachada {
     
     var controladorLoginFB : ControladorLoginFB
     var controladorCadastroItem : ControladorCadastroItem
+    var contaAtual : ContaAtual?
     
     private init() {
         var fabricaRepositorios : FabricaRepositoriosAbstrata? = nil
@@ -26,6 +27,8 @@ class Fachada {
                     break
                 }
             }
+            
+
         }
         
         let repositorioContas = fabricaRepositorios!.criarRepositorioContas()
@@ -33,7 +36,8 @@ class Fachada {
         //let repositorioTrocas = fabricaRepositorios!.criarRepositorioTrocas()
         
         controladorLoginFB = ControladorLoginFB(repositorioContas: repositorioContas)
-        controladorCadastroItem = ControladorCadastroItem(repositorio: repositorioItens)
+        controladorCadastroItem = ControladorCadastroItem(repositorioItens: repositorioItens, repositorioContas: repositorioContas)
+        
     }
     
     /*Singleton pattern implementation*/
@@ -51,8 +55,8 @@ class Fachada {
         
     }
     
-    func cadastrarItem(foto:UIImage, nome:String, conta:Conta) {
-        //controladorCadastroItem.cadastroItens
+    func cadastrarItem(foto: UIImage, nome: String, callback: @escaping (Error?) -> ()) {
+        controladorCadastroItem.cadastrarItem(foto: foto, nome: nome, idConta: (self.contaAtual?.idConta!)!, callback: callback)
     }
     
 }

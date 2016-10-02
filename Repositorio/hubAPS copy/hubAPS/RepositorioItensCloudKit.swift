@@ -31,7 +31,9 @@ class RepositorioItensCloudKit : IRepositorioItens {
         itemRecord.setObject(asset, forKey: "foto")
         
         publicDB.save(itemRecord) { (record, error) in
-            callback(error)
+            DispatchQueue.main.async {
+                callback(error)
+            }
         }
         
     }
