@@ -17,26 +17,39 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var textField: UITextField!
     
+    
     @IBAction func pressSaveBtn(_ sender: AnyObject) {
-        self.indicadorAtv.startAnimating()
         
-        self.cadastrarItem(foto: self.image.image!, nome: self.textField.text!) {
-            (error) in
-            if (error == nil) {
-                self.indicadorAtv.stopAnimating()
-                
-                //alerta
-                self.alertaSucesso(resultado: "sucesso")
-                
+        if (self.conferirCampos()){
+            
+            self.indicadorAtv.startAnimating()
+            
+            self.cadastrarItem(foto: self.image.image!, nome: self.textField.text!) {
+                (error) in
+                if (error == nil) {
+                    self.indicadorAtv.stopAnimating()
+                    
+                    //alerta
+                    self.alerta(resultado: "sucesso")
+                    
+                }
+                else {
+                    self.indicadorAtv.stopAnimating()
+                    
+                    //alerta
+                    self.alerta(resultado: "falha")
+                }
             }
-            else {
-                //alerta
-                self.alertaSucesso(resultado: "falha")
-            }
+        } else {
+            self.alerta(resultado: "preenchimento")
         }
     }
     
-    func alertaSucesso(resultado: String) {
+    func conferirCampos() -> Bool {
+        return (self.textField.text != nil && self.image.image != nil)
+    }
+    
+    func alerta(resultado: String) {
         
         var titulo : String
         var mensagem : String
@@ -51,6 +64,12 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
             titulo = "Falha!"
             mensagem = "O item não pode ser inserido no banco"
             break
+            
+        case "preenchimento":
+            titulo = "Erro!"
+            mensagem = "Insira um nome e uma foto para ao item"
+            break
+            
         default:
             titulo = "Falha!"
             mensagem = "O item não pode ser inserido no banco"
