@@ -186,7 +186,6 @@
 				712C9B731D9D7E47004468B2 /* NSUserDefaults */,
 				712C9B701D9D5BB6004468B2 /* Extensoes */,
 				DAB73F741D9CADC200665036 /* Facebook */,
-				712C9B651D9C29DD004468B2 /* hubAPS.entitlements */,
 				2B81495A1D9B158700D1C136 /* Item */,
 				2B8149591D9B157B00D1C136 /* Troca */,
 				2B8149581D9B156800D1C136 /* Conta */,
@@ -196,9 +195,9 @@
 				712C9B381D9AFCCF004468B2 /* AppDelegate.swift */,
 				712C9B421D9AFCCF004468B2 /* Assets.xcassets */,
 				712C9B691D9D4DA3004468B2 /* iago 2.png */,
-				712C9B761DA17A51004468B2 /* configurations.plist */,
 				712C9B471D9AFCCF004468B2 /* Info.plist */,
 				712C9B3F1D9AFCCF004468B2 /* hubAPS.xcdatamodeld */,
+				712C9B651D9C29DD004468B2 /* hubAPS.entitlements */,
 				DA4457881D9C596B00388A16 /* hubAPS-Bridging-Header.h */,
 			);
 			path = hubAPS;
@@ -227,6 +226,7 @@
 		712C9B731D9D7E47004468B2 /* NSUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				712C9B761DA17A51004468B2 /* configurations.plist */,
 				712C9B741D9D7F81004468B2 /* ContaAtual.swift */,
 			);
 			name = NSUserDefaults;
