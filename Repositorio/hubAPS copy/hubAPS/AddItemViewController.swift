@@ -59,6 +59,10 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         let alertController = UIAlertController(title: titulo, message: mensagem, preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+            
+            self.image.image = UIImage(named: "interrogacao")
+            self.image.contentMode = UIViewContentMode.scaleAspectFit
+            self.textField.text = ""
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
