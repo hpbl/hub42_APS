@@ -12,7 +12,7 @@ import FBSDKLoginKit
 import CoreLocation
 
 class ViewController: UIViewController{
-
+    
     let fachada = Fachada.instance
     
     override func viewDidLoad() {

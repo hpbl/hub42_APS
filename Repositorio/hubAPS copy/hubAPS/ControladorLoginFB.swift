@@ -36,7 +36,9 @@ class ControladorLoginFB {
         self.cadastroContas.verificarEmailFB(email: (contaFB.email)!) {
             (erro, id) in
             if (id != nil) {
-                self.fachadaCallback!(nil, id!)
+                DispatchQueue.main.async {
+                    self.fachadaCallback!(nil, id!)
+                }
             } else {
                 self.cadastroContas.inserirConta(conta: contaFB, callback: self.fachadaCallback!)
             }

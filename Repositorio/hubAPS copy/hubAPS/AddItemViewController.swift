@@ -24,11 +24,44 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
             (error) in
             if (error == nil) {
                 self.indicadorAtv.stopAnimating()
+                
+                //alerta
+                self.alertaSucesso(resultado: "sucesso")
+                
             }
             else {
-                //TODO: tratar erro
+                //alerta
+                self.alertaSucesso(resultado: "falha")
             }
         }
+    }
+    
+    func alertaSucesso(resultado: String) {
+        
+        var titulo : String
+        var mensagem : String
+        
+        switch resultado {
+        case "sucesso":
+            titulo = "Sucesso!"
+            mensagem = "O item foi inserido no banco"
+            break
+            
+        case "falha":
+            titulo = "Falha!"
+            mensagem = "O item não pode ser inserido no banco"
+            break
+        default:
+            titulo = "Falha!"
+            mensagem = "O item não pode ser inserido no banco"
+            break
+        }
+        
+        let alertController = UIAlertController(title: titulo, message: mensagem, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+        }
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     

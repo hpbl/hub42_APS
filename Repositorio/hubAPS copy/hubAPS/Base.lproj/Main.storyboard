@@ -88,15 +88,15 @@
                                     <action selector="pressSaveBtn:" destination="zJk-J2-tIq" eventType="touchUpInside" id="VbM-f5-rsR"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
-                                <frame key="frameInset" minX="141" minY="226" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" red="0.057012024575167776" green="0.022519924496644295" blue="0.90070290907046979" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-Lh-qtp">
                                 <frame key="frameInset" minX="135" width="64" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ved-yU-1R4">
+                                <frame key="frameInset" minX="141" minY="478" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568629" green="0.082352941176470587" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

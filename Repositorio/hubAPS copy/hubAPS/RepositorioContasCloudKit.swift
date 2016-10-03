@@ -31,7 +31,9 @@ class RepositorioContasCloudKit : IRepositorioContas{
 
         publicDB.save(contaRecord) { (record, error) in
             if ((error) == nil) {
-                callback(error, conta.id)
+                DispatchQueue.main.async {
+                    callback(error, conta.id)
+                }
             }
         }
     }
