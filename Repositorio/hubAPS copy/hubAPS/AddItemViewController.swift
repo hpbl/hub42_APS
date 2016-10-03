@@ -46,7 +46,8 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func conferirCampos() -> Bool {
-        return (self.textField.text != nil && self.image.image != nil)
+        return (self.textField.text != nil && self.image.image != nil && self.textField.text != "" && self.image.image != UIImage(named: "interrogacao"))
+        
     }
     
     func alerta(resultado: String) {
