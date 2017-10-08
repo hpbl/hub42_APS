@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Fronteiras da Ciência</title>
+		<link>http://frontdaciencia.ufrgs.br</link>
+		<description>Um programa que explica como funciona a Ciência. A Ciência faz parte do nosso dia-a-dia. Vivemos
+                             imersos num mar de idéias, objetos e instrumentos que definem muito do que somos e fazemos, mas 
+                             muitas vezes não compreendemos todo seu significado. Numa atmosfera descontraída - como numa roda 
+                             de mate - cientistas conversam sobre assuntos do momento e tentam preencher as lacunas deixadas 
+                             pelo sistema educacional e pela desinformação dominante na mídia. Por que saber é um direito de
+	                     todos.      
+		</description>
+                <image>
+                  <url>http://frontdaciencia.ufrgs.br/Fronteiras.da.Ciencia.jpg</url>
+                  <title>Fronteiras da Ciência</title>
+                  <link>http://frontdaciencia.ufrgs.br</link>
+                </image>
+		<language>pt-br</language>
+		<copyright>creative commons</copyright>
+                <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<lastBuildDate>Sun, 19 Jul 2015 09:00:00 GMT</lastBuildDate>
+		<generator>Manually by JJA</generator>		
+		<webMaster>frontdaciencia@ufrgs.br (Jeferson Arenzon)</webMaster>
+		<atom:link href="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>Oi tudo bom com você</title>
+			<description>Programa 1</description>
+			<pubDate>Sun, 20 Jun 2010 10:40:05 GMT</pubDate>
+			<enclosure url="https://www.dropbox.com/s/54rhpqdzaevtykq/Oi%20Tudo%20Bom.mp3" length="55122173" type="audio/mpeg"/>
+		<guid>http://frontdaciencia.ufrgs.br/#1</guid>
+		</item>
+
+		<item>
+			<title>Um até dez</title>
+			<description>Programa 2</description>
+			<pubDate>Sun, 22 Jun 2010 10:40:05 GMT</pubDate>
+			<enclosure url="https://www.dropbox.com/s/oljra3r4y8krk6m/At%C3%A9%2010.mp3" length="55122173" type="audio/mpeg"/>
+		<guid>http://frontdaciencia.ufrgs.br/#2</guid>
+		</item>
+
+		<item>
+			<title>Buba é trouxa</title>
+			<description>Programa 3</description>
+			<pubDate>Sun, 24 Jun 2010 10:40:05 GMT</pubDate>
+			<enclosure url="https://www.dropbox.com/s/4ge3tn0sf0cx1uu/New%20Recording%208.mp3" length="55122173" type="audio/mpeg"/>
+		<guid>http://frontdaciencia.ufrgs.br/#3</guid>
+		</item>
+
+		</channel>
+	</rss>
+
+
+
